@@ -12,13 +12,15 @@ import math
 import copy
 from PIL import Image
 import random
+import unittest
+import logging, logging.config, time
 
 MAX_LUT_SIZE = 65536
 DEFAULT_GAMMA_LUT = numpy.array(
         [math.floor(65535 * math.pow(i/65535.0, 1/2.2) + 0.5)
             for i in xrange(65536)])
 
-def raw10_to_unpackRaw16(img, width, height):
+def raw10_to_unpackRaw16(img, width, height, stride):
     """Unpack a raw-10 capture to raw-16 capture.
     Args:
         img: the raw-10 img object
@@ -29,16 +31,14 @@ def raw10_to_unpackRaw16(img, width, height):
     """
 
     if width % 4 != 0:
-        print "width not align to 4, Invalid raw-10 buffer width"
+        logger.error("width not align to 4, Invalid raw-10 buffer width")
 
     #img = copy.deepcopy(img)
-    #print img.reshape(4,5)
-    #img=img.reshape(1944, 3248)
-    print "after reshape: "+ str(len(img))
-    newimg = unpack_raw10_image(img, width, height)
+    logger.info("after reshape, the imgsize:%d", len(img))
+    newimg = unpack_raw10_image(img, width, height, stride)
     return newimg
 
-def unpack_raw10_image(img, w, h):
+def unpack_raw10_image(img, w, h, stride):
     """Unpack a raw-10 img
 
     Args:
@@ -47,32 +47,22 @@ def unpack_raw10_image(img, w, h):
     Returns:
         Image as a uint16 numpy array, with all row padding stripped.
     """
-   # if img.shape[1] % 5 != 0:
-   #     print "Invalid raw-10 buffer width"
-
-    stride=3248
-    print len(img)
+#    if img.shape[1] % 5 != 0:
+#        logger.error("Invalid raw-10 buffer width")
+    logger.info("the input size: %d Byte, width:%d, height:%d, stride:%d",len(img), w, h, stride)
     #cut out the 4x8b MSBs and shift to bits [9:2] in 16b words.
     img=img.reshape(1944, 3248)
-    img=numpy.delete(img, -1, 1)
-    img=numpy.delete(img, -1, 1)
-    img=numpy.delete(img, -1, 1)
-    img=numpy.delete(img, -1, 1)
-    img=numpy.delete(img, -1, 1)
-    img=numpy.delete(img, -1, 1)
-    img=numpy.delete(img, -1, 1)
-    img=numpy.delete(img, -1, 1)
-    print "after delete last stride: "+str(len(img))
+
+    padding = stride-w*1.25;
+    logger.info("the padding from stride-w*1.25: %d", padding)
+    for i in range(int(padding)):
+        img=numpy.delete(img, -1, 1)
+    logger.info("after delete last stride: %d",len(img))
+
     msbs = numpy.delete(img, numpy.s_[4::5], 1)
-    print "numpy.delete:"
-    print len(msbs)
     msbs = msbs.astype(numpy.uint16)
-    print "astype uint16"
-    print len(msbs)
     msbs = numpy.left_shift(msbs, 2) #example: np.right_shift(10,1) ->5(101)
-    print "left_shift:"
-    print len(msbs)
-    
+
     msbs = msbs.reshape(h, w)
 
     #Cut out the 4x2b LSBs and put each in bits [1:0] of their own 8b words
@@ -125,7 +115,7 @@ def get_cfa_order(config):
     elif config == 4:
         return [3,2,1,0]
     else:
-        print "Not Supported CFA"
+        logger.error("Not Supported CFA")
 
 
 def convert_rawRGGB_to_rgbImage(r_plane, gr_plane, gb_plane, b_plane):
@@ -160,6 +150,7 @@ def write_image(img, fname, apply_gamma=False):
         img = apply_lut_to_image(img, DEFAULT_GAMMA_LUT)
 
     (h, w, chans) = img.shape
+    logger.info("read from input img, width:%d, height:%d, chans:%d", h, w, chans)
     if chans == 3:
         #img=Image.fromarray((img*255.0).astype(numpy.uint8), "RGB")
         img=Image.fromarray((img).astype(numpy.uint8), "RGB")
@@ -168,7 +159,7 @@ def write_image(img, fname, apply_gamma=False):
        # img3 = (img*255.0).astype(numpy.uint8).repeat(3).reshape(h,w,3)
         img3 = (img).astype(numpy.uint8).repeat(3).reshape(h,w,3)
     else:
-        print "Unsupported image type"
+        logger.error("Unsupported image type")
 
 
 def apply_lut_to_image(img, lut):
@@ -197,30 +188,51 @@ def apply_lut_to_image(img, lut):
 
     """
     n = len(lut)
-    print "lut n: %d" %n
+    logger.info("Gamma lut n: %d", n)
     if n<=0 or n> MAX_LUT_SIZE or (n & (n - 1)) != 0:
-        print "Invalid arg LUT size: %d" %n
+        logger.error("Invalid arg LUT size: %d", n)
     m = float(n-1)
     return (lut[(img*m).astype(numpy.uint16)] / m).astype(numpy.float32)
 
 
+class __UnitTest(unittest.TestCase):
+    """Run a suite of unit tests on this module.
+    
+    For every expore, Please Add a single Test here
+    """
+    def test_raw10_to_jpeg(self):
+        """ test convert the raw10 dump from QCOM phone
+            to jpeg
+        """
+        logger.info("Test 1: test_raw10_to_jpeg.")
+        #Step 0: get raw pic Info
+        img_w = 2592
+        img_h = 1944
+        img_stride = 3248
+
+        #Step 1: Open raw
+        fp = open('2592_1944_stride3248.raw')
+        img=fp.read()
+        fp.close()
+
+        #Step 2: convert from string to array
+        img_array = numpy.fromstring(img, numpy.uint8)
+        
+        #Step 3: upack the Raw10 to Raw16
+        new = raw10_to_unpackRaw16(img_array, img_w, img_h, img_stride)
+        fp = open('test.raw', 'wb')
+        fp.write(new)
+        fp.close()
+        logger.info("Save raw10-->raw16 done")
+
+        #Step 4: convert it to jpg Use PIL lib.
+        r, gr, gb, b = seperateRGB(new, img_w, img_h)
+        img = convert_rawRGGB_to_rgbImage(r, gr, gb, b)
+        img = write_image(img, "2592_1944_stride3248.jpg")
+
 if __name__ == "__main__":
-    #test img: 2592_1944_stride3248.raw
-    fp = open('2592_1944_stride3248.raw')
-    img=fp.read()
-    #fp.close()
+    logging.config.fileConfig('logger.conf')
+    logger = logging.getLogger("root")#.addHandler(console)
+    unittest.main()
 
-    #convert from string to array
-    img_array = numpy.fromstring(img, numpy.uint8)
-    #img_array = numpy.array([i+random.randint(0, 200) for i in range(1, 21)])
-    #print img_array
-    print "img_array"
-    print len(img_array)
-    new = raw10_to_unpackRaw16(img_array, 2592, 1944)
-    fp = open('test.raw', 'wb')
-    fp.write(new)
-    fp.close()
 
-    r, gr, gb, b = seperateRGB(new, 2592, 1944)
-    img = convert_rawRGGB_to_rgbImage(r, gr, gb, b)
-    img = write_image(img, "2592_1944_stride3248.jpg", True)
