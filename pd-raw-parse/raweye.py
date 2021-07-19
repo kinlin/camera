@@ -2,7 +2,7 @@
 import sys, math, os
 import argparse
 import numpy as np
-import cv2
+#import cv2
 from colour_demosaicing import demosaicing_CFA_Bayer_bilinear as demosaicing
 from colour_hdri import (
         EXAMPLES_RESOURCES_DIRECTORY,
@@ -25,49 +25,18 @@ from imageio import imwrite
 from rawimage import *
 #import rawpy
 import  xml.dom.minidom
+import datetime
 
+#install
+#py -m pip install colour_demosaicing
+#py -m pip install imageio
+#py -m pip install colour_hdri
+#py -m pip install matplotlib
+#py -m pip install numpy
 
 g_ccm = np.array([[1.2085, -0.2502, 0.0417],
                   [-0.1174, 1.1625, -0.0452],
                   [0.0226, -0.2524, 1.2298]])
-MAX_LUT_SIZE = 65536
-DEFAULT_GAMMA_LUT = np.array(
-        [math.floor(65535 * math.pow(i/65535.0, 1/2.2) + 0.5)
-            for i in range(65536)])
-
-            
-def apply_lut_to_image(img, lut):
-    """Applies a LUT to every pixel in a float image array.
-     Internally converts to a 16b integer image, since the LUT can work with up
-     to 16b->16b mappings (i.e. values in the range [0,65535]). The lut can also
-     have fewer than 65536 entries, however it must be sized as a power of     2
-     (and for smaller luts, the scale must match the bitdepth).
-
-     For a 16b lut of 65536 entries, the operation performed is:
-
-         lut[r * 65535] / 65535 -> r'
-         lut[g * 65535] / 65535 -> g'
-         lut[b * 65535] / 65535 -> b'
-     For a 10b lut of 1024 entries, the operation becomes:
-         lut[r * 1023] / 1023 -> r'
-         lut[g * 1023] / 1023 -> g'
-         lut[b * 1023] / 1023 -> b'
-
-     Args:
-         img: Numpy float image array, with pixel values in [0,1].
-         lut: Numpy table encoding a LUT, mapping 16b integer values.
-
-     Returns:
-         Float image array after applying LUT to each pixel.
-
-    """
-    n = len(lut)
-
-    if n<=0 or n> MAX_LUT_SIZE or (n & (n - 1)) != 0:
-        logger.error("Invalid arg LUT size: %d", n)
-    m = float(n-1)
-    return (lut[(img*m).astype(np.uint16)] / m).astype(np.float32)
-
 
 def rgb2gray(rgb):
     return np.dot(rgb[...,:3], [0.299, 0.587, 0.114])
@@ -81,7 +50,7 @@ class DefaultParam():
         self.dgain    = 2.0
 
 def process(args):
-    print(args.rawtype, args.bayer, args.height, args.width, args.dgain, args.infile, args.outfile)
+    print(datetime.datetime.now(), args.rawtype, args.bayer, args.height, args.width, args.dgain, args.infile, args.outfile)
 
     rawmap = {'raw10': Raw10Image(args.infile, args.width, args.height, args.offset, args.bayer),
               'raw'  : MipiRawImage(args.infile, args.width, args.height, args.offset, args.bayer),
@@ -137,8 +106,11 @@ if "__main__" == __name__:
             args.outfile=file.split('.')[0]+'.'+'jpg'
             rgb = process(args)
 
+            rgb = tonemapping_operator_filmic(rgb)
+
             np.clip(rgb, 0.0, 1.0, out=rgb)
-            gray=rgb2gray(rgb)
+            #make it gray
+            rgb=rgb2gray(rgb)
 
 
             #read xml
@@ -146,16 +118,18 @@ if "__main__" == __name__:
             #req00004_cam0_pdlib_buffer_meta_LensPos0320.xml -> ['req00004', 'cam0', 'pdlib', 'buffer', 'meta', 'LensPos0320']
             bufFile=file.split('.')[0].split('_')
             xmlFile=path+'/'+bufFile[0]+"_" + bufFile[1] + "_" + "pdlib_buffer_meta_LensPos" + bufFile[-1] + ".xml"
-            dom = xml.dom.minidom.parse(xmlFile)
-            root = dom.documentElement
-            startX=float(root.getElementsByTagName('startX')[0].childNodes[0].data)
-            startY=float(root.getElementsByTagName('startY')[0].childNodes[0].data)
-            endX=float(root.getElementsByTagName('endX')[0].childNodes[0].data)
-            endY=float(root.getElementsByTagName('endY')[0].childNodes[0].data)
-
+            if os.path.exists(xmlFile):
+                dom = xml.dom.minidom.parse(xmlFile)
+                root = dom.documentElement
+                startX=float(root.getElementsByTagName('startX')[0].childNodes[0].data)
+                startY=float(root.getElementsByTagName('startY')[0].childNodes[0].data)
+                endX=float(root.getElementsByTagName('endX')[0].childNodes[0].data)
+                endY=float(root.getElementsByTagName('endY')[0].childNodes[0].data)
+            else:
+                startX, startY, endX, endY=0.3, 0.7, 0.3, 0.7
             #imwrite(args.outfile, gray)
-            plt.figure(dpi=200)
-            plt.imshow(gray, cmap='Greys_r')
+            plt.figure(dpi=100)
+            plt.imshow(rgb, cmap='Greys_r')
             currentAxis=plt.gca()
 
             f_width=defaultP.width
@@ -172,7 +146,7 @@ if "__main__" == __name__:
 
     #apply Gamma
     #seems have problem, not do it now
-    #rgb = apply_lut_to_image(rgb, DEFAULT_GAMMA_LUT)
+
 
     #rgb = np.dot(rgb, g_ccm)
 
