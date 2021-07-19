@@ -1,0 +1,148 @@
+//************************************************************/
+//-------------------- TARGET AND VERSION --------------------/
+//************************************************************/
+Version = 050
+// HW Version
+// 0x90000000Major :: 9Minor :: 0Incr :: 0
+// For 8998 , hw_version = 8998
+chipset_version = 8998 
+//************************************************************/ 
+// Pipeline Configurations 
+//************************************************************/ 
+Video_Mode_Enable = 0
+Video_Mode_Num_Of_Files = 3
+//// CAMIF
+camif_en = 1
+camif_in_cfg.clip_first_line = 0
+camif_in_cfg.clip_last_line = 3495
+camif_in_cfg.clip_first_pixel = 0
+camif_in_cfg.clip_last_pixel = 4655
+//************************************************************/ 
+//-------------------- VFE BLOCKS ----------------------------/ 
+//************************************************************/ 
+
+//********* VFE Module Enable/Disable Registers ***************//
+// ---- Lens Module Register Enable Flags ----
+// Addr :: 0x40	 Val :: 0xdc6
+vfe_2d_pedestal_en = 0
+vfe_linearization_en = 1
+vfe_demux_en = 1
+vfe_in_cfg.chroma_upsample_en = 0
+vfe_hdr_recon_en = 0
+vfe_hdr_mac_en = 0
+vfe_bpc_en  = 1
+vfe_abf3_en = 1
+vfe_lens_rolloff_en = 1
+vfe_gic_en = 0
+vfe_demosaic_en = 1
+vfe_blss_en = 1
+vfe_pdpc_sbpc_en = 0
+// ---- Color Module Register Enable Flags ----
+// Addr :: 0x48	 Val :: 0xff
+vfe_cac_en = 0
+vfe_skin_nr_en = 0
+vfe_color_correct_en = 1
+vfe_gtm_en = 1
+vfe_rgb_lut_en = 1
+vfe_ltm_en = 1
+vfe_chroma_enhance_en = 1
+vfe_mce_en = 1
+vfe_chroma_suppress_en = 1
+vfe_skin_color_en = 1
+// ---- Stats Module Register Enable Flags ----
+// Addr :: 0x44	 Val :: 0x13f
+vfe_hdr_be_stats_en = 1
+vfe_stats_hdr_bhist_en_en = 1
+vfe_in_cfg.bayer_focus_sel = 1
+vfe_in_cfg.bayer_grid_sel = 1
+vfe_stats_skin_bhist_en_en = 1
+vfe_in_cfg.stat_row_sum_en = 1
+vfe_in_cfg.stat_col_sum_en = 0
+vfe_stats_skin_ihist_en_en = 0
+vfe_in_cfg.bayer_aec_grid_sel = 1
+// ---- Scale/Crop Module Register Enable Flags ----
+// Addr :: 0x4c	 Val :: 0x1ff
+vfe_in_cfg.colorxform_vf_en = 1
+//.........................................../
+//------------	Scaler & Crop	-------------/ 
+//.........................................../
+// VFE down scaler
+// Currently only supports 4:2:0 output unless lowlight_cnr is turned on
+// If the luma image size has no change from VFE scaler, set it to 0
+vfe_scaler_luma_img_size_change = 0
+// If vfe_scaler_luma_img_size_change is set to 0, the two below are DONT_CARE
+vfe_scaler_luma_output_h = 2328
+vfe_scaler_luma_output_v = 1748
+scale_in_cfg_enable_hor_chroma_downsample = 1
+scale_in_cfg_enable_ver_chroma_downsample = 1
+scale_in_cfg_v_cnt_init = 0.0
+scale_in_cfg_h_cnt_init = 0.0
+//crop
+// For 4:2:0 images, Luma cropping starts from even pixel/line
+// and ends with odd pixel/line (If not set correctly, simulator will get them corrected)
+// Parameters for Chroma cropping are automatically set up in simulator
+vfe_in_cfg.crop_en = 1
+crop_in_cfg.luma_first_line = 20
+crop_in_cfg.luma_last_line = 3475
+crop_in_cfg.luma_first_pixel = 24
+crop_in_cfg.luma_last_pixel = 2327
+//************************************************************/ 
+// SW PROC MODULES
+//************************************************************/ 
+cac_sw_en = 0
+rnr_sw_en = 0
+//************************************************************/ 
+//-------------------- CPP BLOCKS ----------------------------/ 
+//************************************************************/ 
+cpp_wnr_enable = 1
+cpp_asf_9x9_en = 1
+cpp_temporal_wnr_en = 0
+cpp_pre_scale_bf_en = 0 
+//.........................................../
+//------------	Scaler 	-----	-------------/ 
+//.........................................../
+// 1) CPP input image size is detemined from VFE
+// 2) upscale_mode 0: bilinear, 1: bicubic, 2: nearest neighbor
+// 3) scale_factor is sampling factor; If it is set to 0,
+//    the simulator will automatically set it up by assuming
+//    the input image will all be mapped to output (except for initial offsets)
+// 4) the initial_offset values for Luma need to be multiple of 2 for downsampled chroma input.
+//    (If not set correctly, simulator will get them corrected)
+// 5) Parameters for Chroma are automatically set up in simulator to align with Luma
+// 6) CPP YCbCr output is always 4:2:0
+// If the luma image size has no change from CPP scaler, set cpp_scaler_luma_img_size_change to 0
+cpp_scaler_luma_img_size_change = 0
+// If cpp_scaler_luma_img_size_change is set to 0, output_width and output_height are DONT_CARE
+cpp_scaler_luma_cfg.output_width = 4656
+cpp_scaler_luma_cfg.output_height = 3496
+cpp_scaler_luma_cfg.horizontal_initial_offset = 0
+cpp_scaler_luma_cfg.vertical_initial_offset = 0
+cpp_scaler_luma_cfg.upscale_mode = 1
+//************************************************************/ 
+//-------------------- DEBUG AND OUTPUT	 ---------------------/ 
+//************************************************************/ 
+// flag to output yuv or bmp file
+// 0: BMP/JPEG output, 1: YCbCr/BMP/JPEG output, 2: JPEG output only
+output_image_format = 1
+//JPEG quality mode: between 0 (lowest quality) and 100 (highest quality)
+jpeg_quality = 95
+//**************************************************************/ 
+//-------------------- ADDITIONAL FEATURES ---------------------/ 
+//**************************************************************/ 
+// Tintless Correction 
+tintless_correction_enable = 1
+// flag to bypass VFE and run CPP only
+run_cpp_only = 0
+//CPP ONLY YUV format:
+//0: 420 YCbCr planar
+//1: NV21 -> 420 Y planar followed by CrCb interleaved (VFE format).
+//2: NV12 -> 420 Y planar followed by CbCr interleaved.
+yuvformat = 1
+// flag to dump VFE/CPP configs out
+dump_cfg_to_file = 1
+// flag to enable roll off data from file
+RolloffCfg_From_File_Enable = 1
+// Dump Packed config
+dump_packed_config = 1
+drc_feature_enable = 0
+// dual_vfe_proc_en = %d1

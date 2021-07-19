@@ -1,0 +1,7 @@
+2019-07-19 15:44:57,756 camera.py[line:207] INFO Test 1: test_raw10_to_jpeg.
+2019-07-19 15:44:57,783 camera.py[line:37] INFO after reshape, the imgsize:6314112
+2019-07-19 15:44:57,783 camera.py[line:52] INFO the input size: 6314112 Byte, width:2592, height:1944, stride:3248
+2019-07-19 15:44:57,784 camera.py[line:57] INFO the padding from stride-w*1.25: 8
+2019-07-19 15:44:57,830 camera.py[line:60] INFO after delete last stride: 1944
+2019-07-19 15:44:58,053 camera.py[line:226] INFO Save raw10-->raw16 done
+2019-07-19 15:44:58,160 camera.py[line:153] INFO read from input img, width:972, height:1296, chans:3

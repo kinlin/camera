@@ -1,0 +1,59 @@
+//isp bin file header
+VERSION = 0x6
+SENSOR_DATA_SIZE = 0x2c
+VFE_DATA_SIZE = 0x4054
+CPP_DATA_SIZE = 0x0
+CAC_DATA_SIZE = 0x0
+
+//Sensor data
+Width = 4656
+Height = 3520
+BitsPerPixel = 10
+// Bayer pattern, 0: RGGB, 1:GRBG, 2:BGGR, 3:GBRG
+bayer_pattern =  3
+// For packed data, set PackFormat to 1; For unpacked data format, set it to 0
+PackFormat = 2
+Gain = 1.00814020633698
+lux_idx = 166.062072753906
+Digital_Gain = 1.00026416778564
+HDR_mode = 0
+se_sensor_real_gain = 1.00787401199341
+se_sensor_digital_gain = 1.00026416778564
+EXPOSURE_TIME = 978
+// AWB Info
+AWB_ColorTemp = 5416
+AWB_Gain_R = 2.03273057937622
+AWB_Gain_G = 1
+AWB_Gain_B = 1.82670199871063
+cds_en = 0
+SE_lux_idx = 166.062073
+// To Input CCM , CC_FLAG Set to 1 reads CCM from Meta file , 0 for disable
+CC_FLAG = 1
+Exp_Index = 110
+Prev_Exp_Index = 110
+backlightmode_enable = 6
+scene_mode = 0
+DRC_LTM_ratio = 0.699999988
+DRC_LA_ratio = 0
+DRC_GTM_ratio = 0.300000012
+DRC_Gamma_ratio = -1
+DRC_Color_Gain = 2.15022445
+DRC_total_Gain = 2.98522353
+Exposure_ratio_k = 2.97577667
+exp_time_ratio = 3
+// Color Correction Matrix
+Q_factor = 0 //Q7
+CC_0 = 1.4609375 //CC_8=187
+CC_1 = -0.4375 //CC_6=-56
+CC_2 = -0.0234375 //CC_7=-3
+CC_3 = -0.125 //CC_2=-16
+CC_4 = 1.15625 //CC_0=148
+CC_5 = -0.03125 //CC_1=-4
+CC_6 = 0.0703125 //CC_5=9
+CC_7 = -0.640625 //CC_3=-82
+CC_8 = 1.5703125 //CC_4=201
+Version = 33
+//Sensor LE data
+LE_REAL_GAIN = 6.98232411e+033
+LE_DIGITAL_GAIN = 2.30449362e-038
+RolloffCfg_File_Name = 1.bin_rolloffcfg.dat

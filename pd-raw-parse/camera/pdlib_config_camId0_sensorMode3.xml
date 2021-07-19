@@ -1,0 +1,2153 @@
+
+										<pdlib_config>
+												<PDLibVersion>
+													<majorVersion>9</majorVersion>
+												<minorVersion>1</minorVersion>
+												<tinyVersion>0</tinyVersion>
+												</PDLibVersion>
+													<PDLibInitParam>
+												<nativePatternInfo>
+													<patternInfo>
+															<blockPattern>
+																<pixelCount>8</pixelCount>
+																<pixelCoordinate>
+																<Item Index="0">
+																		<x>2</x>
+																		<y>1</y>
+																	<type>1</type>
+																</Item>
+																	<Item Index="1">
+																		<x>2</x>
+																			<y>1</y>
+																	<type>0</type>
+																	</Item>
+																	<Item Index="2">
+																			<x>0</x>
+																	<y>3</y>
+																		<type>1</type>
+																	</Item>
+																		<Item Index="3">
+																	<x>0</x>
+																		<y>3</y>
+																			<type>0</type>
+																</Item>
+																<Item Index="4">
+																		<x>4</x>
+																		<y>5</y>
+																	<type>1</type>
+																</Item>
+																	<Item Index="5">
+																		<x>4</x>
+																			<y>5</y>
+																	<type>0</type>
+																	</Item>
+																	<Item Index="6">
+																		<x>6</x>
+																	<y>7</y>
+																		<type>1</type>
+																	</Item>
+																	<Item Index="7">
+																	<x>6</x>
+																		<y>7</y>
+																		<type>0</type>
+																		</Item>
+															</pixelCoordinate>
+																<horizontalPDOffset>17</horizontalPDOffset>
+																<verticalPDOffset>0</verticalPDOffset>
+																<blockDimension>
+																<width>8</width>
+																	<height>8</height>
+																</blockDimension>
+															</blockPattern>
+														<horizontalBlockCount>574</horizontalBlockCount>
+															<verticalBlockCount>326</verticalBlockCount>
+														</patternInfo>
+														<cropRegion>
+														<x>0</x>
+															<y>0</y>
+															<width>4624</width>
+															<height>2608</height>
+													</cropRegion>
+														<originalImageWidth>9248</originalImageWidth>
+														<originalImageHeight>6944</originalImageHeight>
+														<currentImageWidth>4624</currentImageWidth>
+													<currentImageHeight>2608</currentImageHeight>
+														<orientation>0</orientation>
+														<bufferFormat>1</bufferFormat>
+													<horizontalDownscaleFactor>1.000000</horizontalDownscaleFactor>
+														<verticalDownscaleFactor>1.000000</verticalDownscaleFactor>
+														<PDOffsetCorrection>0.000000</PDOffsetCorrection>
+													<lcrPDOffset>0.000000</lcrPDOffset>
+													<lcrBlockPattern>
+															<lineCount>4</lineCount>
+																<linePosition>
+															<Item Index="0">2</Item>
+															<Item Index="1">0</Item>
+																<Item Index="2">4</Item>
+																<Item Index="3">6</Item>
+														</linePosition>
+															<horizontalPDOffset>17</horizontalPDOffset>
+															<verticalPDOffset>0</verticalPDOffset>
+															<blockDimension>
+															<width>8</width>
+																<height>8</height>
+															</blockDimension>
+														</lcrBlockPattern>
+													<bayerPattern>3</bayerPattern>
+												</nativePatternInfo>
+													<blackLevel>64</blackLevel>
+														<pixelDepth>10</pixelDepth>
+												<isHdrModeEnabled>0</isHdrModeEnabled>
+												<PDPixelOverflowThreshold>0</PDPixelOverflowThreshold>
+													<macroDac>853</macroDac>
+													<infinityDac>412</infinityDac>
+												<actuatorSensitivity>0.650406</actuatorSensitivity>
+													<pixelOrderType>0</pixelOrderType>
+													<defocusBitShift>0</defocusBitShift>
+												<defocusConfidenceThreshold>200</defocusConfidenceThreshold>
+												<sensorPDStatsFormat>0</sensorPDStatsFormat>
+														<bufferDataInfo>
+														<isp1BlockPattern>
+																<pixelCount>8</pixelCount>
+																<pixelCoordinate>
+																<Item Index="0">
+																<x>0</x>
+																<y>0</y>
+																	<type>1</type>
+																</Item>
+																<Item Index="1">
+																<x>1</x>
+																<y>0</y>
+																<type>0</type>
+															</Item>
+																<Item Index="2">
+																	<x>0</x>
+																	<y>1</y>
+																<type>1</type>
+																</Item>
+																<Item Index="3">
+																	<x>1</x>
+																<y>1</y>
+																	<type>0</type>
+																</Item>
+																<Item Index="4">
+																<x>0</x>
+															<y>2</y>
+															<type>1</type>
+														</Item>
+															<Item Index="5">
+																<x>1</x>
+																<y>2</y>
+																<type>0</type>
+															</Item>
+															<Item Index="6">
+																<x>0</x>
+																<y>3</y>
+																<type>1</type>
+															</Item>
+															<Item Index="7">
+																<x>1</x>
+																<y>3</y>
+																<type>0</type>
+															</Item>
+														</pixelCoordinate>
+													<horizontalPDOffset>0</horizontalPDOffset>
+												<verticalPDOffset>0</verticalPDOffset>
+												<blockDimension>
+												<width>2</width>
+													<height>4</height>
+												</blockDimension>
+											</isp1BlockPattern>
+											<isp2BlockPattern>
+											<pixelCount>0</pixelCount>
+											<pixelCoordinate>
+											</pixelCoordinate>
+											<horizontalPDOffset>0</horizontalPDOffset>
+											<verticalPDOffset>0</verticalPDOffset>
+											<blockDimension>
+												<width>0</width>
+												<height>0</height>
+											</blockDimension>
+										</isp2BlockPattern>
+										<isp1BufferWidth>1148</isp1BufferWidth>
+										<isp1BufferStride>2304</isp1BufferStride>
+										<isp2BufferWidth>0</isp2BufferWidth>
+											<isp2BufferStride>0</isp2BufferStride>
+											<ispBufferHeight>1304</ispBufferHeight>
+											<imageOverlap>0</imageOverlap>
+											<isp2ImageOffset>0</isp2ImageOffset>
+											<bufferFormat>2</bufferFormat>
+											<sensorType>2</sensorType>
+											<lcrBufferData>
+												<isp1BlockPattern>
+												<lineCount>4</lineCount>
+													<linePosition>
+														<Item Index="0">2</Item>
+															<Item Index="1">0</Item>
+														<Item Index="2">4</Item>
+													<Item Index="3">6</Item>
+											</linePosition>
+											<horizontalPDOffset>17</horizontalPDOffset>
+											<verticalPDOffset>0</verticalPDOffset>
+											<blockDimension>
+												<width>8</width>
+												<height>8</height>
+												</blockDimension>
+											</isp1BlockPattern>
+											<isp2BlockPattern>
+												<lineCount>0</lineCount>
+													<linePosition>
+													</linePosition>
+														<horizontalPDOffset>0</horizontalPDOffset>
+															<verticalPDOffset>0</verticalPDOffset>
+															<blockDimension>
+																	<width>0</width>
+																		<height>0</height>
+																	</blockDimension>
+															</isp2BlockPattern>
+															<isp1BufferWidth>4624</isp1BufferWidth>
+																<isp1BufferStride>5792</isp1BufferStride>
+																	<isp2BufferWidth>0</isp2BufferWidth>
+															<isp2BufferStride>0</isp2BufferStride>
+															<ispBufferHeight>2608</ispBufferHeight>
+																<imageOverlap>0</imageOverlap>
+																<isp2ImageOffset>0</isp2ImageOffset>
+															<bufferFormat>1</bufferFormat>
+														</lcrBufferData>
+														</bufferDataInfo>
+														<cameraInfo>
+															<algoRole>0</algoRole>
+														<cameraId>0</cameraId>
+														</cameraInfo>
+													</PDLibInitParam>
+													<PDLibCalibration>
+													<isAvailable>1</isAvailable>
+														<VersionNum>4</VersionNum>
+															<MapWidth>17</MapWidth>
+													<MapHeight>13</MapHeight>
+													<Left_GainMap>
+															<Item Index="0">958</Item>
+														<Item Index="1">808</Item>
+															<Item Index="2">693</Item>
+															<Item Index="3">610</Item>
+														<Item Index="4">551</Item>
+														<Item Index="5">507</Item>
+														<Item Index="6">476</Item>
+														<Item Index="7">458</Item>
+													<Item Index="8">452</Item>
+														<Item Index="9">458</Item>
+														<Item Index="10">476</Item>
+														<Item Index="11">503</Item>
+														<Item Index="12">546</Item>
+															<Item Index="13">602</Item>
+															<Item Index="14">682</Item>
+														<Item Index="15">793</Item>
+															<Item Index="16">943</Item>
+															<Item Index="17">842</Item>
+														<Item Index="18">709</Item>
+														<Item Index="19">610</Item>
+															<Item Index="20">539</Item>
+															<Item Index="21">485</Item>
+														<Item Index="22">444</Item>
+															<Item Index="23">414</Item>
+															<Item Index="24">394</Item>
+														<Item Index="25">388</Item>
+														<Item Index="26">394</Item>
+															<Item Index="27">411</Item>
+															<Item Index="28">440</Item>
+															<Item Index="29">481</Item>
+															<Item Index="30">536</Item>
+															<Item Index="31">606</Item>
+															<Item Index="32">701</Item>
+															<Item Index="33">834</Item>
+																<Item Index="34">770</Item>
+															<Item Index="35">643</Item>
+															<Item Index="36">556</Item>
+														<Item Index="37">488</Item>
+															<Item Index="38">436</Item>
+															<Item Index="39">393</Item>
+															<Item Index="40">364</Item>
+															<Item Index="41">345</Item>
+															<Item Index="42">339</Item>
+															<Item Index="43">344</Item>
+															<Item Index="44">362</Item>
+															<Item Index="45">393</Item>
+																<Item Index="46">433</Item>
+															<Item Index="47">487</Item>
+															<Item Index="48">552</Item>
+														<Item Index="49">636</Item>
+															<Item Index="50">754</Item>
+															<Item Index="51">712</Item>
+													<Item Index="52">600</Item>
+													<Item Index="53">519</Item>
+														<Item Index="54">450</Item>
+														<Item Index="55">396</Item>
+													<Item Index="56">354</Item>
+														<Item Index="57">326</Item>
+															<Item Index="58">308</Item>
+														<Item Index="59">302</Item>
+														<Item Index="60">308</Item>
+														<Item Index="61">325</Item>
+														<Item Index="62">353</Item>
+														<Item Index="63">393</Item>
+														<Item Index="64">446</Item>
+														<Item Index="65">510</Item>
+														<Item Index="66">588</Item>
+														<Item Index="67">695</Item>
+														<Item Index="68">669</Item>
+													<Item Index="69">564</Item>
+														<Item Index="70">487</Item>
+															<Item Index="71">422</Item>
+														<Item Index="72">367</Item>
+															<Item Index="73">327</Item>
+															<Item Index="74">299</Item>
+															<Item Index="75">282</Item>
+														<Item Index="76">275</Item>
+															<Item Index="77">282</Item>
+															<Item Index="78">298</Item>
+														<Item Index="79">324</Item>
+															<Item Index="80">364</Item>
+															<Item Index="81">415</Item>
+															<Item Index="82">478</Item>
+														<Item Index="83">557</Item>
+															<Item Index="84">657</Item>
+															<Item Index="85">648</Item>
+														<Item Index="86">547</Item>
+														<Item Index="87">468</Item>
+														<Item Index="88">404</Item>
+														<Item Index="89">351</Item>
+													<Item Index="90">311</Item>
+														<Item Index="91">285</Item>
+														<Item Index="92">268</Item>
+													<Item Index="93">261</Item>
+													<Item Index="94">266</Item>
+													<Item Index="95">282</Item>
+												<Item Index="96">309</Item>
+												<Item Index="97">347</Item>
+													<Item Index="98">399</Item>
+												<Item Index="99">463</Item>
+													<Item Index="100">541</Item>
+														<Item Index="101">641</Item>
+												<Item Index="102">639</Item>
+													<Item Index="103">541</Item>
+													<Item Index="104">462</Item>
+													<Item Index="105">396</Item>
+												<Item Index="106">344</Item>
+													<Item Index="107">304</Item>
+													<Item Index="108">279</Item>
+												<Item Index="109">263</Item>
+											<Item Index="110">256</Item>
+											<Item Index="111">261</Item>
+												<Item Index="112">276</Item>
+												<Item Index="113">303</Item>
+												<Item Index="114">341</Item>
+												<Item Index="115">392</Item>
+												<Item Index="116">457</Item>
+											<Item Index="117">534</Item>
+										<Item Index="118">632</Item>
+											<Item Index="119">645</Item>
+											<Item Index="120">542</Item>
+											<Item Index="121">464</Item>
+											<Item Index="122">401</Item>
+												<Item Index="123">347</Item>
+											<Item Index="124">308</Item>
+										<Item Index="125">283</Item>
+										<Item Index="126">267</Item>
+										<Item Index="127">260</Item>
+										<Item Index="128">265</Item>
+										<Item Index="129">281</Item>
+										<Item Index="130">307</Item>
+										<Item Index="131">345</Item>
+									<Item Index="132">396</Item>
+										<Item Index="133">462</Item>
+											<Item Index="134">539</Item>
+												<Item Index="135">636</Item>
+													<Item Index="136">667</Item>
+													<Item Index="137">561</Item>
+													<Item Index="138">481</Item>
+														<Item Index="139">418</Item>
+													<Item Index="140">366</Item>
+													<Item Index="141">325</Item>
+												<Item Index="142">298</Item>
+												<Item Index="143">282</Item>
+												<Item Index="144">277</Item>
+													<Item Index="145">281</Item>
+												<Item Index="146">296</Item>
+											<Item Index="147">324</Item>
+												<Item Index="148">363</Item>
+													<Item Index="149">415</Item>
+														<Item Index="150">480</Item>
+													<Item Index="151">557</Item>
+														<Item Index="152">660</Item>
+													<Item Index="153">701</Item>
+												<Item Index="154">592</Item>
+												<Item Index="155">510</Item>
+												<Item Index="156">446</Item>
+												<Item Index="157">392</Item>
+												<Item Index="158">351</Item>
+												<Item Index="159">322</Item>
+												<Item Index="160">305</Item>
+											<Item Index="161">300</Item>
+												<Item Index="162">305</Item>
+												<Item Index="163">321</Item>
+										<Item Index="164">350</Item>
+										<Item Index="165">391</Item>
+										<Item Index="166">444</Item>
+										<Item Index="167">510</Item>
+										<Item Index="168">588</Item>
+											<Item Index="169">695</Item>
+											<Item Index="170">757</Item>
+												<Item Index="171">639</Item>
+											<Item Index="172">552</Item>
+											<Item Index="173">484</Item>
+											<Item Index="174">430</Item>
+											<Item Index="175">389</Item>
+											<Item Index="176">360</Item>
+											<Item Index="177">341</Item>
+											<Item Index="178">334</Item>
+											<Item Index="179">341</Item>
+												<Item Index="180">359</Item>
+											<Item Index="181">389</Item>
+											<Item Index="182">431</Item>
+											<Item Index="183">484</Item>
+											<Item Index="184">551</Item>
+											<Item Index="185">634</Item>
+											<Item Index="186">754</Item>
+											<Item Index="187">834</Item>
+											<Item Index="188">701</Item>
+											<Item Index="189">606</Item>
+											<Item Index="190">536</Item>
+											<Item Index="191">481</Item>
+											<Item Index="192">439</Item>
+											<Item Index="193">410</Item>
+											<Item Index="194">391</Item>
+											<Item Index="195">385</Item>
+											<Item Index="196">390</Item>
+												<Item Index="197">410</Item>
+											<Item Index="198">440</Item>
+											<Item Index="199">483</Item>
+											<Item Index="200">537</Item>
+											<Item Index="201">610</Item>
+											<Item Index="202">701</Item>
+											<Item Index="203">830</Item>
+											<Item Index="204">933</Item>
+											<Item Index="205">790</Item>
+											<Item Index="206">685</Item>
+											<Item Index="207">608</Item>
+												<Item Index="208">549</Item>
+												<Item Index="209">506</Item>
+												<Item Index="210">474</Item>
+												<Item Index="211">455</Item>
+												<Item Index="212">449</Item>
+												<Item Index="213">455</Item>
+												<Item Index="214">473</Item>
+												<Item Index="215">504</Item>
+												<Item Index="216">547</Item>
+												<Item Index="217">604</Item>
+												<Item Index="218">687</Item>
+												<Item Index="219">797</Item>
+												<Item Index="220">943</Item>
+											</Left_GainMap>
+											<Right_GainMap>
+												<Item Index="0">958</Item>
+												<Item Index="1">808</Item>
+												<Item Index="2">693</Item>
+												<Item Index="3">613</Item>
+												<Item Index="4">552</Item>
+												<Item Index="5">509</Item>
+												<Item Index="6">476</Item>
+												<Item Index="7">459</Item>
+												<Item Index="8">453</Item>
+												<Item Index="9">459</Item>
+												<Item Index="10">476</Item>
+												<Item Index="11">506</Item>
+												<Item Index="12">549</Item>
+												<Item Index="13">604</Item>
+												<Item Index="14">685</Item>
+												<Item Index="15">797</Item>
+												<Item Index="16">938</Item>
+												<Item Index="17">842</Item>
+												<Item Index="18">706</Item>
+												<Item Index="19">610</Item>
+												<Item Index="20">539</Item>
+													<Item Index="21">484</Item>
+												<Item Index="22">442</Item>
+												<Item Index="23">413</Item>
+												<Item Index="24">394</Item>
+												<Item Index="25">388</Item>
+												<Item Index="26">394</Item>
+												<Item Index="27">411</Item>
+												<Item Index="28">440</Item>
+												<Item Index="29">481</Item>
+												<Item Index="30">534</Item>
+												<Item Index="31">608</Item>
+												<Item Index="32">701</Item>
+												<Item Index="33">830</Item>
+												<Item Index="34">766</Item>
+												<Item Index="35">643</Item>
+												<Item Index="36">557</Item>
+												<Item Index="37">488</Item>
+												<Item Index="38">435</Item>
+												<Item Index="39">394</Item>
+												<Item Index="40">364</Item>
+												<Item Index="41">345</Item>
+												<Item Index="42">339</Item>
+												<Item Index="43">345</Item>
+												<Item Index="44">363</Item>
+												<Item Index="45">390</Item>
+												<Item Index="46">431</Item>
+												<Item Index="47">485</Item>
+												<Item Index="48">552</Item>
+												<Item Index="49">639</Item>
+												<Item Index="50">757</Item>
+												<Item Index="51">712</Item>
+												<Item Index="52">598</Item>
+												<Item Index="53">517</Item>
+												<Item Index="54">449</Item>
+												<Item Index="55">396</Item>
+												<Item Index="56">356</Item>
+												<Item Index="57">326</Item>
+												<Item Index="58">308</Item>
+												<Item Index="59">302</Item>
+												<Item Index="60">309</Item>
+												<Item Index="61">325</Item>
+												<Item Index="62">352</Item>
+												<Item Index="63">391</Item>
+												<Item Index="64">444</Item>
+												<Item Index="65">510</Item>
+												<Item Index="66">590</Item>
+												<Item Index="67">698</Item>
+												<Item Index="68">672</Item>
+												<Item Index="69">566</Item>
+													<Item Index="70">487</Item>
+												<Item Index="71">421</Item>
+												<Item Index="72">367</Item>
+												<Item Index="73">327</Item>
+													<Item Index="74">300</Item>
+												<Item Index="75">282</Item>
+												<Item Index="76">276</Item>
+												<Item Index="77">282</Item>
+												<Item Index="78">298</Item>
+												<Item Index="79">325</Item>
+											<Item Index="80">364</Item>
+											<Item Index="81">417</Item>
+											<Item Index="82">481</Item>
+											<Item Index="83">557</Item>
+											<Item Index="84">660</Item>
+											<Item Index="85">650</Item>
+												<Item Index="86">546</Item>
+											<Item Index="87">469</Item>
+											<Item Index="88">403</Item>
+											<Item Index="89">350</Item>
+												<Item Index="90">310</Item>
+											<Item Index="91">283</Item>
+											<Item Index="92">267</Item>
+											<Item Index="93">261</Item>
+											<Item Index="94">266</Item>
+											<Item Index="95">282</Item>
+											<Item Index="96">309</Item>
+											<Item Index="97">347</Item>
+											<Item Index="98">398</Item>
+											<Item Index="99">463</Item>
+											<Item Index="100">541</Item>
+											<Item Index="101">639</Item>
+											<Item Index="102">639</Item>
+											<Item Index="103">537</Item>
+											<Item Index="104">459</Item>
+											<Item Index="105">395</Item>
+											<Item Index="106">343</Item>
+											<Item Index="107">304</Item>
+											<Item Index="108">278</Item>
+											<Item Index="109">261</Item>
+											<Item Index="110">256</Item>
+											<Item Index="111">261</Item>
+												<Item Index="112">277</Item>
+											<Item Index="113">303</Item>
+											<Item Index="114">341</Item>
+											<Item Index="115">392</Item>
+											<Item Index="116">456</Item>
+											<Item Index="117">533</Item>
+											<Item Index="118">632</Item>
+											<Item Index="119">645</Item>
+											<Item Index="120">541</Item>
+											<Item Index="121">464</Item>
+											<Item Index="122">399</Item>
+											<Item Index="123">347</Item>
+											<Item Index="124">308</Item>
+											<Item Index="125">284</Item>
+											<Item Index="126">267</Item>
+											<Item Index="127">261</Item>
+											<Item Index="128">266</Item>
+											<Item Index="129">282</Item>
+											<Item Index="130">307</Item>
+											<Item Index="131">346</Item>
+											<Item Index="132">399</Item>
+											<Item Index="133">464</Item>
+											<Item Index="134">541</Item>
+											<Item Index="135">641</Item>
+											<Item Index="136">669</Item>
+											<Item Index="137">561</Item>
+											<Item Index="138">483</Item>
+											<Item Index="139">418</Item>
+										<Item Index="140">364</Item>
+										<Item Index="141">324</Item>
+										<Item Index="142">298</Item>
+										<Item Index="143">282</Item>
+									<Item Index="144">276</Item>
+									<Item Index="145">281</Item>
+									<Item Index="146">296</Item>
+									<Item Index="147">323</Item>
+									<Item Index="148">363</Item>
+									<Item Index="149">416</Item>
+									<Item Index="150">480</Item>
+									<Item Index="151">557</Item>
+									<Item Index="152">660</Item>
+										<Item Index="153">704</Item>
+										<Item Index="154">592</Item>
+										<Item Index="155">510</Item>
+										<Item Index="156">444</Item>
+									<Item Index="157">391</Item>
+									<Item Index="158">352</Item>
+									<Item Index="159">322</Item>
+										<Item Index="160">305</Item>
+									<Item Index="161">299</Item>
+									<Item Index="162">306</Item>
+									<Item Index="163">322</Item>
+										<Item Index="164">349</Item>
+									<Item Index="165">391</Item>
+									<Item Index="166">444</Item>
+									<Item Index="167">509</Item>
+									<Item Index="168">588</Item>
+									<Item Index="169">698</Item>
+									<Item Index="170">760</Item>
+									<Item Index="171">636</Item>
+									<Item Index="172">551</Item>
+									<Item Index="173">485</Item>
+									<Item Index="174">431</Item>
+									<Item Index="175">390</Item>
+									<Item Index="176">359</Item>
+										<Item Index="177">341</Item>
+								<Item Index="178">335</Item>
+									<Item Index="179">342</Item>
+										<Item Index="180">359</Item>
+										<Item Index="181">389</Item>
+										<Item Index="182">431</Item>
+										<Item Index="183">484</Item>
+										<Item Index="184">552</Item>
+										<Item Index="185">636</Item>
+										<Item Index="186">757</Item>
+										<Item Index="187">830</Item>
+										<Item Index="188">701</Item>
+										<Item Index="189">608</Item>
+									<Item Index="190">537</Item>
+									<Item Index="191">483</Item>
+									<Item Index="192">441</Item>
+									<Item Index="193">410</Item>
+									<Item Index="194">391</Item>
+									<Item Index="195">385</Item>
+									<Item Index="196">391</Item>
+									<Item Index="197">411</Item>
+									<Item Index="198">440</Item>
+									<Item Index="199">481</Item>
+									<Item Index="200">537</Item>
+									<Item Index="201">608</Item>
+									<Item Index="202">701</Item>
+									<Item Index="203">834</Item>
+									<Item Index="204">938</Item>
+									<Item Index="205">790</Item>
+									<Item Index="206">685</Item>
+									<Item Index="207">606</Item>
+									<Item Index="208">549</Item>
+									<Item Index="209">507</Item>
+									<Item Index="210">474</Item>
+									<Item Index="211">455</Item>
+									<Item Index="212">448</Item>
+									<Item Index="213">456</Item>
+										<Item Index="214">474</Item>
+									<Item Index="215">502</Item>
+									<Item Index="216">546</Item>
+									<Item Index="217">604</Item>
+									<Item Index="218">687</Item>
+									<Item Index="219">797</Item>
+										<Item Index="220">938</Item>
+									</Right_GainMap>
+										<Center_GainMap>
+										<Item Index="0">1296</Item>
+										<Item Index="1">1031</Item>
+										<Item Index="2">847</Item>
+										<Item Index="3">735</Item>
+										<Item Index="4">648</Item>
+										<Item Index="5">585</Item>
+										<Item Index="6">550</Item>
+										<Item Index="7">526</Item>
+											<Item Index="8">515</Item>
+											<Item Index="9">529</Item>
+											<Item Index="10">550</Item>
+											<Item Index="11">588</Item>
+											<Item Index="12">637</Item>
+											<Item Index="13">721</Item>
+											<Item Index="14">847</Item>
+											<Item Index="15">1003</Item>
+											<Item Index="16">1296</Item>
+											<Item Index="17">1064</Item>
+											<Item Index="18">855</Item>
+											<Item Index="19">725</Item>
+											<Item Index="20">619</Item>
+											<Item Index="21">547</Item>
+											<Item Index="22">496</Item>
+											<Item Index="23">457</Item>
+											<Item Index="24">436</Item>
+											<Item Index="25">427</Item>
+											<Item Index="26">432</Item>
+											<Item Index="27">457</Item>
+											<Item Index="28">490</Item>
+											<Item Index="29">547</Item>
+											<Item Index="30">619</Item>
+											<Item Index="31">725</Item>
+											<Item Index="32">855</Item>
+											<Item Index="33">1064</Item>
+												<Item Index="34">942</Item>
+											<Item Index="35">759</Item>
+											<Item Index="36">637</Item>
+											<Item Index="37">547</Item>
+											<Item Index="38">480</Item>
+											<Item Index="39">427</Item>
+												<Item Index="40">392</Item>
+												<Item Index="41">370</Item>
+												<Item Index="42">362</Item>
+												<Item Index="43">370</Item>
+											<Item Index="44">392</Item>
+											<Item Index="45">427</Item>
+											<Item Index="46">480</Item>
+											<Item Index="47">547</Item>
+											<Item Index="48">637</Item>
+											<Item Index="49">759</Item>
+											<Item Index="50">942</Item>
+											<Item Index="51">861</Item>
+											<Item Index="52">692</Item>
+											<Item Index="53">588</Item>
+											<Item Index="54">496</Item>
+											<Item Index="55">432</Item>
+											<Item Index="56">380</Item>
+											<Item Index="57">343</Item>
+											<Item Index="58">322</Item>
+											<Item Index="59">316</Item>
+											<Item Index="60">322</Item>
+											<Item Index="61">343</Item>
+											<Item Index="62">380</Item>
+											<Item Index="63">427</Item>
+											<Item Index="64">496</Item>
+											<Item Index="65">581</Item>
+											<Item Index="66">692</Item>
+											<Item Index="67">861</Item>
+											<Item Index="68">808</Item>
+											<Item Index="69">645</Item>
+											<Item Index="70">547</Item>
+											<Item Index="71">461</Item>
+											<Item Index="72">395</Item>
+											<Item Index="73">343</Item>
+											<Item Index="74">309</Item>
+											<Item Index="75">289</Item>
+											<Item Index="76">282</Item>
+											<Item Index="77">289</Item>
+											<Item Index="78">309</Item>
+											<Item Index="79">343</Item>
+											<Item Index="80">392</Item>
+											<Item Index="81">457</Item>
+											<Item Index="82">541</Item>
+											<Item Index="83">645</Item>
+											<Item Index="84">808</Item>
+											<Item Index="85">768</Item>
+											<Item Index="86">619</Item>
+											<Item Index="87">523</Item>
+											<Item Index="88">436</Item>
+											<Item Index="89">370</Item>
+											<Item Index="90">322</Item>
+											<Item Index="91">289</Item>
+											<Item Index="92">269</Item>
+											<Item Index="93">263</Item>
+										<Item Index="94">269</Item>
+										<Item Index="95">289</Item>
+										<Item Index="96">322</Item>
+											<Item Index="97">370</Item>
+										<Item Index="98">436</Item>
+										<Item Index="99">517</Item>
+										<Item Index="100">619</Item>
+										<Item Index="101">768</Item>
+										<Item Index="102">754</Item>
+										<Item Index="103">611</Item>
+										<Item Index="104">511</Item>
+										<Item Index="105">427</Item>
+										<Item Index="106">362</Item>
+									<Item Index="107">314</Item>
+									<Item Index="108">282</Item>
+									<Item Index="109">263</Item>
+									<Item Index="110">256</Item>
+									<Item Index="111">261</Item>
+										<Item Index="112">282</Item>
+										<Item Index="113">314</Item>
+										<Item Index="114">362</Item>
+											<Item Index="115">427</Item>
+											<Item Index="116">511</Item>
+											<Item Index="117">611</Item>
+											<Item Index="118">754</Item>
+										<Item Index="119">768</Item>
+										<Item Index="120">619</Item>
+										<Item Index="121">517</Item>
+										<Item Index="122">436</Item>
+										<Item Index="123">367</Item>
+											<Item Index="124">320</Item>
+											<Item Index="125">289</Item>
+											<Item Index="126">269</Item>
+												<Item Index="127">261</Item>
+										<Item Index="128">267</Item>
+										<Item Index="129">287</Item>
+										<Item Index="130">320</Item>
+										<Item Index="131">367</Item>
+										<Item Index="132">436</Item>
+										<Item Index="133">517</Item>
+										<Item Index="134">619</Item>
+										<Item Index="135">768</Item>
+										<Item Index="136">808</Item>
+										<Item Index="137">645</Item>
+										<Item Index="138">541</Item>
+										<Item Index="139">457</Item>
+											<Item Index="140">392</Item>
+										<Item Index="141">341</Item>
+										<Item Index="142">307</Item>
+										<Item Index="143">289</Item>
+											<Item Index="144">280</Item>
+										<Item Index="145">287</Item>
+										<Item Index="146">307</Item>
+										<Item Index="147">341</Item>
+										<Item Index="148">392</Item>
+										<Item Index="149">461</Item>
+										<Item Index="150">541</Item>
+										<Item Index="151">645</Item>
+										<Item Index="152">808</Item>
+										<Item Index="153">842</Item>
+									<Item Index="154">692</Item>
+									<Item Index="155">581</Item>
+									<Item Index="156">496</Item>
+									<Item Index="157">427</Item>
+								<Item Index="158">376</Item>
+										<Item Index="159">341</Item>
+									<Item Index="160">318</Item>
+									<Item Index="161">311</Item>
+									<Item Index="162">318</Item>
+										<Item Index="163">341</Item>
+									<Item Index="164">376</Item>
+									<Item Index="165">427</Item>
+									<Item Index="166">496</Item>
+										<Item Index="167">581</Item>
+									<Item Index="168">692</Item>
+									<Item Index="169">861</Item>
+									<Item Index="170">942</Item>
+										<Item Index="171">759</Item>
+									<Item Index="172">637</Item>
+									<Item Index="173">547</Item>
+									<Item Index="174">480</Item>
+										<Item Index="175">424</Item>
+								<Item Index="176">389</Item>
+								<Item Index="177">365</Item>
+								<Item Index="178">359</Item>
+								<Item Index="179">367</Item>
+								<Item Index="180">389</Item>
+									<Item Index="181">427</Item>
+							<Item Index="182">480</Item>
+							<Item Index="183">547</Item>
+							<Item Index="184">637</Item>
+								<Item Index="185">759</Item>
+							<Item Index="186">942</Item>
+							<Item Index="187">1031</Item>
+							<Item Index="188">855</Item>
+								<Item Index="189">713</Item>
+							<Item Index="190">619</Item>
+							<Item Index="191">547</Item>
+							<Item Index="192">490</Item>
+								<Item Index="193">453</Item>
+								<Item Index="194">432</Item>
+								<Item Index="195">424</Item>
+								<Item Index="196">432</Item>
+								<Item Index="197">457</Item>
+								<Item Index="198">490</Item>
+								<Item Index="199">547</Item>
+								<Item Index="200">619</Item>
+								<Item Index="201">725</Item>
+								<Item Index="202">855</Item>
+								<Item Index="203">1064</Item>
+								<Item Index="204">1253</Item>
+								<Item Index="205">973</Item>
+									<Item Index="206">831</Item>
+								<Item Index="207">721</Item>
+								<Item Index="208">637</Item>
+								<Item Index="209">579</Item>
+									<Item Index="210">543</Item>
+									<Item Index="211">513</Item>
+									<Item Index="212">510</Item>
+									<Item Index="213">521</Item>
+									<Item Index="214">541</Item>
+									<Item Index="215">579</Item>
+									<Item Index="216">637</Item>
+									<Item Index="217">721</Item>
+									<Item Index="218">847</Item>
+									<Item Index="219">1003</Item>
+									<Item Index="220">1253</Item>
+								</Center_GainMap>
+								<Up_GainMap>
+									<Item Index="0">0</Item>
+									<Item Index="1">0</Item>
+									<Item Index="2">0</Item>
+									<Item Index="3">0</Item>
+									<Item Index="4">0</Item>
+									<Item Index="5">0</Item>
+									<Item Index="6">0</Item>
+									<Item Index="7">0</Item>
+									<Item Index="8">0</Item>
+								<Item Index="9">0</Item>
+								<Item Index="10">0</Item>
+								<Item Index="11">0</Item>
+									<Item Index="12">0</Item>
+								<Item Index="13">0</Item>
+								<Item Index="14">0</Item>
+								<Item Index="15">0</Item>
+									<Item Index="16">0</Item>
+								<Item Index="17">0</Item>
+								<Item Index="18">0</Item>
+								<Item Index="19">0</Item>
+									<Item Index="20">0</Item>
+								<Item Index="21">0</Item>
+								<Item Index="22">0</Item>
+								<Item Index="23">0</Item>
+									<Item Index="24">0</Item>
+								<Item Index="25">0</Item>
+								<Item Index="26">0</Item>
+								<Item Index="27">0</Item>
+									<Item Index="28">0</Item>
+									<Item Index="29">0</Item>
+									<Item Index="30">0</Item>
+									<Item Index="31">0</Item>
+									<Item Index="32">0</Item>
+									<Item Index="33">0</Item>
+									<Item Index="34">0</Item>
+									<Item Index="35">0</Item>
+									<Item Index="36">0</Item>
+										<Item Index="37">0</Item>
+									<Item Index="38">0</Item>
+									<Item Index="39">0</Item>
+									<Item Index="40">0</Item>
+										<Item Index="41">0</Item>
+									<Item Index="42">0</Item>
+									<Item Index="43">0</Item>
+									<Item Index="44">0</Item>
+									<Item Index="45">0</Item>
+										<Item Index="46">0</Item>
+									<Item Index="47">0</Item>
+									<Item Index="48">0</Item>
+									<Item Index="49">0</Item>
+										<Item Index="50">0</Item>
+									<Item Index="51">0</Item>
+									<Item Index="52">0</Item>
+									<Item Index="53">0</Item>
+									<Item Index="54">0</Item>
+									<Item Index="55">0</Item>
+									<Item Index="56">0</Item>
+									<Item Index="57">0</Item>
+									<Item Index="58">0</Item>
+										<Item Index="59">0</Item>
+									<Item Index="60">0</Item>
+									<Item Index="61">0</Item>
+									<Item Index="62">0</Item>
+										<Item Index="63">0</Item>
+									<Item Index="64">0</Item>
+									<Item Index="65">0</Item>
+									<Item Index="66">0</Item>
+									<Item Index="67">0</Item>
+									<Item Index="68">0</Item>
+									<Item Index="69">0</Item>
+									<Item Index="70">0</Item>
+									<Item Index="71">0</Item>
+									<Item Index="72">0</Item>
+										<Item Index="73">0</Item>
+										<Item Index="74">0</Item>
+										<Item Index="75">0</Item>
+										<Item Index="76">0</Item>
+										<Item Index="77">0</Item>
+										<Item Index="78">0</Item>
+									<Item Index="79">0</Item>
+									<Item Index="80">0</Item>
+									<Item Index="81">0</Item>
+									<Item Index="82">0</Item>
+								<Item Index="83">0</Item>
+								<Item Index="84">0</Item>
+								<Item Index="85">0</Item>
+									<Item Index="86">0</Item>
+								<Item Index="87">0</Item>
+								<Item Index="88">0</Item>
+								<Item Index="89">0</Item>
+									<Item Index="90">0</Item>
+								<Item Index="91">0</Item>
+								<Item Index="92">0</Item>
+								<Item Index="93">0</Item>
+									<Item Index="94">0</Item>
+								<Item Index="95">0</Item>
+								<Item Index="96">0</Item>
+								<Item Index="97">0</Item>
+								<Item Index="98">0</Item>
+								<Item Index="99">0</Item>
+								<Item Index="100">0</Item>
+								<Item Index="101">0</Item>
+								<Item Index="102">0</Item>
+								<Item Index="103">0</Item>
+								<Item Index="104">0</Item>
+								<Item Index="105">0</Item>
+								<Item Index="106">0</Item>
+									<Item Index="107">0</Item>
+								<Item Index="108">0</Item>
+								<Item Index="109">0</Item>
+								<Item Index="110">0</Item>
+									<Item Index="111">0</Item>
+								<Item Index="112">0</Item>
+								<Item Index="113">0</Item>
+								<Item Index="114">0</Item>
+									<Item Index="115">0</Item>
+								<Item Index="116">0</Item>
+									<Item Index="117">0</Item>
+									<Item Index="118">0</Item>
+									<Item Index="119">0</Item>
+									<Item Index="120">0</Item>
+									<Item Index="121">0</Item>
+									<Item Index="122">0</Item>
+									<Item Index="123">0</Item>
+									<Item Index="124">0</Item>
+										<Item Index="125">0</Item>
+									<Item Index="126">0</Item>
+									<Item Index="127">0</Item>
+									<Item Index="128">0</Item>
+									<Item Index="129">0</Item>
+									<Item Index="130">0</Item>
+								<Item Index="131">0</Item>
+								<Item Index="132">0</Item>
+								<Item Index="133">0</Item>
+								<Item Index="134">0</Item>
+								<Item Index="135">0</Item>
+								<Item Index="136">0</Item>
+								<Item Index="137">0</Item>
+								<Item Index="138">0</Item>
+								<Item Index="139">0</Item>
+								<Item Index="140">0</Item>
+								<Item Index="141">0</Item>
+								<Item Index="142">0</Item>
+								<Item Index="143">0</Item>
+								<Item Index="144">0</Item>
+								<Item Index="145">0</Item>
+								<Item Index="146">0</Item>
+								<Item Index="147">0</Item>
+								<Item Index="148">0</Item>
+								<Item Index="149">0</Item>
+								<Item Index="150">0</Item>
+								<Item Index="151">0</Item>
+								<Item Index="152">0</Item>
+								<Item Index="153">0</Item>
+									<Item Index="154">0</Item>
+								<Item Index="155">0</Item>
+								<Item Index="156">0</Item>
+								<Item Index="157">0</Item>
+									<Item Index="158">0</Item>
+								<Item Index="159">0</Item>
+								<Item Index="160">0</Item>
+								<Item Index="161">0</Item>
+									<Item Index="162">0</Item>
+								<Item Index="163">0</Item>
+								<Item Index="164">0</Item>
+								<Item Index="165">0</Item>
+									<Item Index="166">0</Item>
+								<Item Index="167">0</Item>
+								<Item Index="168">0</Item>
+								<Item Index="169">0</Item>
+									<Item Index="170">0</Item>
+								<Item Index="171">0</Item>
+								<Item Index="172">0</Item>
+								<Item Index="173">0</Item>
+								<Item Index="174">0</Item>
+								<Item Index="175">0</Item>
+								<Item Index="176">0</Item>
+								<Item Index="177">0</Item>
+								<Item Index="178">0</Item>
+									<Item Index="179">0</Item>
+									<Item Index="180">0</Item>
+									<Item Index="181">0</Item>
+									<Item Index="182">0</Item>
+									<Item Index="183">0</Item>
+									<Item Index="184">0</Item>
+										<Item Index="185">0</Item>
+									<Item Index="186">0</Item>
+									<Item Index="187">0</Item>
+									<Item Index="188">0</Item>
+									<Item Index="189">0</Item>
+									<Item Index="190">0</Item>
+									<Item Index="191">0</Item>
+									<Item Index="192">0</Item>
+									<Item Index="193">0</Item>
+									<Item Index="194">0</Item>
+									<Item Index="195">0</Item>
+									<Item Index="196">0</Item>
+									<Item Index="197">0</Item>
+										<Item Index="198">0</Item>
+									<Item Index="199">0</Item>
+									<Item Index="200">0</Item>
+									<Item Index="201">0</Item>
+										<Item Index="202">0</Item>
+									<Item Index="203">0</Item>
+									<Item Index="204">0</Item>
+									<Item Index="205">0</Item>
+									<Item Index="206">0</Item>
+									<Item Index="207">0</Item>
+										<Item Index="208">0</Item>
+										<Item Index="209">0</Item>
+										<Item Index="210">0</Item>
+										<Item Index="211">0</Item>
+									<Item Index="212">0</Item>
+									<Item Index="213">0</Item>
+									<Item Index="214">0</Item>
+									<Item Index="215">0</Item>
+									<Item Index="216">0</Item>
+									<Item Index="217">0</Item>
+									<Item Index="218">0</Item>
+									<Item Index="219">0</Item>
+									<Item Index="220">0</Item>
+							</Up_GainMap>
+								<Down_GainMap>
+								<Item Index="0">0</Item>
+							<Item Index="1">0</Item>
+							<Item Index="2">0</Item>
+							<Item Index="3">0</Item>
+								<Item Index="4">0</Item>
+							<Item Index="5">0</Item>
+							<Item Index="6">0</Item>
+							<Item Index="7">0</Item>
+								<Item Index="8">0</Item>
+							<Item Index="9">0</Item>
+							<Item Index="10">0</Item>
+							<Item Index="11">0</Item>
+							<Item Index="12">0</Item>
+							<Item Index="13">0</Item>
+							<Item Index="14">0</Item>
+							<Item Index="15">0</Item>
+							<Item Index="16">0</Item>
+							<Item Index="17">0</Item>
+							<Item Index="18">0</Item>
+							<Item Index="19">0</Item>
+								<Item Index="20">0</Item>
+							<Item Index="21">0</Item>
+							<Item Index="22">0</Item>
+							<Item Index="23">0</Item>
+								<Item Index="24">0</Item>
+							<Item Index="25">0</Item>
+							<Item Index="26">0</Item>
+							<Item Index="27">0</Item>
+								<Item Index="28">0</Item>
+							<Item Index="29">0</Item>
+							<Item Index="30">0</Item>
+							<Item Index="31">0</Item>
+								<Item Index="32">0</Item>
+							<Item Index="33">0</Item>
+							<Item Index="34">0</Item>
+							<Item Index="35">0</Item>
+								<Item Index="36">0</Item>
+							<Item Index="37">0</Item>
+							<Item Index="38">0</Item>
+							<Item Index="39">0</Item>
+							<Item Index="40">0</Item>
+							<Item Index="41">0</Item>
+							<Item Index="42">0</Item>
+							<Item Index="43">0</Item>
+							<Item Index="44">0</Item>
+								<Item Index="45">0</Item>
+							<Item Index="46">0</Item>
+							<Item Index="47">0</Item>
+							<Item Index="48">0</Item>
+								<Item Index="49">0</Item>
+							<Item Index="50">0</Item>
+							<Item Index="51">0</Item>
+							<Item Index="52">0</Item>
+								<Item Index="53">0</Item>
+							<Item Index="54">0</Item>
+							<Item Index="55">0</Item>
+							<Item Index="56">0</Item>
+								<Item Index="57">0</Item>
+							<Item Index="58">0</Item>
+							<Item Index="59">0</Item>
+							<Item Index="60">0</Item>
+								<Item Index="61">0</Item>
+							<Item Index="62">0</Item>
+							<Item Index="63">0</Item>
+							<Item Index="64">0</Item>
+							<Item Index="65">0</Item>
+							<Item Index="66">0</Item>
+							<Item Index="67">0</Item>
+							<Item Index="68">0</Item>
+							<Item Index="69">0</Item>
+								<Item Index="70">0</Item>
+							<Item Index="71">0</Item>
+							<Item Index="72">0</Item>
+							<Item Index="73">0</Item>
+								<Item Index="74">0</Item>
+							<Item Index="75">0</Item>
+							<Item Index="76">0</Item>
+							<Item Index="77">0</Item>
+							<Item Index="78">0</Item>
+							<Item Index="79">0</Item>
+							<Item Index="80">0</Item>
+								<Item Index="81">0</Item>
+							<Item Index="82">0</Item>
+							<Item Index="83">0</Item>
+							<Item Index="84">0</Item>
+								<Item Index="85">0</Item>
+							<Item Index="86">0</Item>
+							<Item Index="87">0</Item>
+							<Item Index="88">0</Item>
+								<Item Index="89">0</Item>
+							<Item Index="90">0</Item>
+							<Item Index="91">0</Item>
+							<Item Index="92">0</Item>
+								<Item Index="93">0</Item>
+						<Item Index="94">0</Item>
+						<Item Index="95">0</Item>
+						<Item Index="96">0</Item>
+						<Item Index="97">0</Item>
+						<Item Index="98">0</Item>
+						<Item Index="99">0</Item>
+						<Item Index="100">0</Item>
+						<Item Index="101">0</Item>
+						<Item Index="102">0</Item>
+						<Item Index="103">0</Item>
+						<Item Index="104">0</Item>
+						<Item Index="105">0</Item>
+							<Item Index="106">0</Item>
+						<Item Index="107">0</Item>
+						<Item Index="108">0</Item>
+						<Item Index="109">0</Item>
+						<Item Index="110">0</Item>
+						<Item Index="111">0</Item>
+						<Item Index="112">0</Item>
+							<Item Index="113">0</Item>
+						<Item Index="114">0</Item>
+					<Item Index="115">0</Item>
+					<Item Index="116">0</Item>
+					<Item Index="117">0</Item>
+					<Item Index="118">0</Item>
+					<Item Index="119">0</Item>
+					<Item Index="120">0</Item>
+					<Item Index="121">0</Item>
+						<Item Index="122">0</Item>
+					<Item Index="123">0</Item>
+					<Item Index="124">0</Item>
+					<Item Index="125">0</Item>
+						<Item Index="126">0</Item>
+					<Item Index="127">0</Item>
+					<Item Index="128">0</Item>
+					<Item Index="129">0</Item>
+						<Item Index="130">0</Item>
+					<Item Index="131">0</Item>
+					<Item Index="132">0</Item>
+					<Item Index="133">0</Item>
+					<Item Index="134">0</Item>
+					<Item Index="135">0</Item>
+						<Item Index="136">0</Item>
+						<Item Index="137">0</Item>
+						<Item Index="138">0</Item>
+							<Item Index="139">0</Item>
+						<Item Index="140">0</Item>
+						<Item Index="141">0</Item>
+						<Item Index="142">0</Item>
+						<Item Index="143">0</Item>
+						<Item Index="144">0</Item>
+						<Item Index="145">0</Item>
+						<Item Index="146">0</Item>
+						<Item Index="147">0</Item>
+						<Item Index="148">0</Item>
+							<Item Index="149">0</Item>
+							<Item Index="150">0</Item>
+							<Item Index="151">0</Item>
+								<Item Index="152">0</Item>
+							<Item Index="153">0</Item>
+							<Item Index="154">0</Item>
+							<Item Index="155">0</Item>
+								<Item Index="156">0</Item>
+								<Item Index="157">0</Item>
+								<Item Index="158">0</Item>
+								<Item Index="159">0</Item>
+									<Item Index="160">0</Item>
+									<Item Index="161">0</Item>
+									<Item Index="162">0</Item>
+									<Item Index="163">0</Item>
+									<Item Index="164">0</Item>
+									<Item Index="165">0</Item>
+									<Item Index="166">0</Item>
+									<Item Index="167">0</Item>
+									<Item Index="168">0</Item>
+										<Item Index="169">0</Item>
+									<Item Index="170">0</Item>
+									<Item Index="171">0</Item>
+									<Item Index="172">0</Item>
+										<Item Index="173">0</Item>
+									<Item Index="174">0</Item>
+									<Item Index="175">0</Item>
+									<Item Index="176">0</Item>
+									<Item Index="177">0</Item>
+									<Item Index="178">0</Item>
+									<Item Index="179">0</Item>
+									<Item Index="180">0</Item>
+									<Item Index="181">0</Item>
+										<Item Index="182">0</Item>
+									<Item Index="183">0</Item>
+									<Item Index="184">0</Item>
+									<Item Index="185">0</Item>
+									<Item Index="186">0</Item>
+									<Item Index="187">0</Item>
+									<Item Index="188">0</Item>
+									<Item Index="189">0</Item>
+									<Item Index="190">0</Item>
+									<Item Index="191">0</Item>
+									<Item Index="192">0</Item>
+									<Item Index="193">0</Item>
+									<Item Index="194">0</Item>
+										<Item Index="195">0</Item>
+									<Item Index="196">0</Item>
+									<Item Index="197">0</Item>
+									<Item Index="198">0</Item>
+									<Item Index="199">0</Item>
+									<Item Index="200">0</Item>
+									<Item Index="201">0</Item>
+									<Item Index="202">0</Item>
+									<Item Index="203">0</Item>
+									<Item Index="204">0</Item>
+									<Item Index="205">0</Item>
+										<Item Index="206">0</Item>
+									<Item Index="207">0</Item>
+									<Item Index="208">0</Item>
+									<Item Index="209">0</Item>
+									<Item Index="210">0</Item>
+									<Item Index="211">0</Item>
+									<Item Index="212">0</Item>
+									<Item Index="213">0</Item>
+									<Item Index="214">0</Item>
+									<Item Index="215">0</Item>
+									<Item Index="216">0</Item>
+									<Item Index="217">0</Item>
+										<Item Index="218">0</Item>
+								<Item Index="219">0</Item>
+								<Item Index="220">0</Item>
+							</Down_GainMap>
+							<DCC_map>
+								<Item Index="0">339</Item>
+								<Item Index="1">305</Item>
+								<Item Index="2">279</Item>
+								<Item Index="3">287</Item>
+								<Item Index="4">286</Item>
+								<Item Index="5">277</Item>
+								<Item Index="6">296</Item>
+									<Item Index="7">345</Item>
+								<Item Index="8">312</Item>
+								<Item Index="9">285</Item>
+								<Item Index="10">277</Item>
+									<Item Index="11">297</Item>
+								<Item Index="12">296</Item>
+								<Item Index="13">276</Item>
+								<Item Index="14">281</Item>
+									<Item Index="15">316</Item>
+								<Item Index="16">301</Item>
+								<Item Index="17">270</Item>
+								<Item Index="18">277</Item>
+								<Item Index="19">310</Item>
+								<Item Index="20">311</Item>
+								<Item Index="21">280</Item>
+								<Item Index="22">271</Item>
+								<Item Index="23">301</Item>
+									<Item Index="24">297</Item>
+									<Item Index="25">265</Item>
+									<Item Index="26">279</Item>
+									<Item Index="27">311</Item>
+									<Item Index="28">311</Item>
+									<Item Index="29">280</Item>
+									<Item Index="30">268</Item>
+									<Item Index="31">301</Item>
+									<Item Index="32">312</Item>
+										<Item Index="33">278</Item>
+									<Item Index="34">278</Item>
+									<Item Index="35">300</Item>
+								<Item Index="36">300</Item>
+									<Item Index="37">278</Item>
+									<Item Index="38">286</Item>
+									<Item Index="39">318</Item>
+									<Item Index="40">335</Item>
+								<Item Index="41">293</Item>
+								<Item Index="42">279</Item>
+								<Item Index="43">290</Item>
+								<Item Index="44">289</Item>
+								<Item Index="45">280</Item>
+								<Item Index="46">303</Item>
+								<Item Index="47">342</Item>
+							</DCC_map>
+							<DCC_map_vertical>
+								<Item Index="0">0</Item>
+								<Item Index="1">0</Item>
+								<Item Index="2">0</Item>
+							<Item Index="3">0</Item>
+							<Item Index="4">0</Item>
+							<Item Index="5">0</Item>
+								<Item Index="6">0</Item>
+							<Item Index="7">0</Item>
+							<Item Index="8">0</Item>
+							<Item Index="9">0</Item>
+								<Item Index="10">0</Item>
+							<Item Index="11">0</Item>
+							<Item Index="12">0</Item>
+							<Item Index="13">0</Item>
+								<Item Index="14">0</Item>
+							<Item Index="15">0</Item>
+							<Item Index="16">0</Item>
+							<Item Index="17">0</Item>
+								<Item Index="18">0</Item>
+						<Item Index="19">0</Item>
+						<Item Index="20">0</Item>
+						<Item Index="21">0</Item>
+						<Item Index="22">0</Item>
+						<Item Index="23">0</Item>
+						<Item Index="24">0</Item>
+						<Item Index="25">0</Item>
+					<Item Index="26">0</Item>
+						<Item Index="27">0</Item>
+						<Item Index="28">0</Item>
+						<Item Index="29">0</Item>
+						<Item Index="30">0</Item>
+						<Item Index="31">0</Item>
+						<Item Index="32">0</Item>
+						<Item Index="33">0</Item>
+						<Item Index="34">0</Item>
+						<Item Index="35">0</Item>
+						<Item Index="36">0</Item>
+						<Item Index="37">0</Item>
+						<Item Index="38">0</Item>
+						<Item Index="39">0</Item>
+						<Item Index="40">0</Item>
+						<Item Index="41">0</Item>
+						<Item Index="42">0</Item>
+						<Item Index="43">0</Item>
+						<Item Index="44">0</Item>
+						<Item Index="45">0</Item>
+						<Item Index="46">0</Item>
+						<Item Index="47">0</Item>
+					</DCC_map_vertical>
+					<DCC_param>
+						<VersionNum>0</VersionNum>
+						<Q_factor>4</Q_factor>
+					<MapWidth>8</MapWidth>
+					<MapHeight>6</MapHeight>
+				</DCC_param>
+			</PDLibCalibration>
+			<chromatixPDLibType>
+				<SymbolTableID>830</SymbolTableID>
+				<module_version>
+					<SymbolTableID>0</SymbolTableID>
+					<major_revision>9</major_revision>
+					<minor_revision>0</minor_revision>
+					</module_version>
+					<parameter_version>
+							<SymbolTableID>0</SymbolTableID>
+						</parameter_version>
+					<preProcess>
+						<sparseProcessingMode>0</sparseProcessingMode>
+						<HDR>
+							<channelSelection>0</channelSelection>
+						<longThreshold>450</longThreshold>
+						</HDR>
+						<boxFilterLength>2</boxFilterLength>
+						<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+				<filterTrigger>
+					<filterSet>
+							<Item Index="0">
+								<AECTrigger>
+									<lux_idx_start>0.000000</lux_idx_start>
+								<lux_idx_end>0.000000</lux_idx_end>
+									<gain_start>8.000000</gain_start>
+								<gain_end>8.000000</gain_end>
+								</AECTrigger>
+								<verticalMode>8</verticalMode>
+									<horizontalMode>1</horizontalMode>
+									<boxFilterLength>2</boxFilterLength>
+								<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+							</Item>
+							<Item Index="1">
+									<AECTrigger>
+											<lux_idx_start>0.000000</lux_idx_start>
+												<lux_idx_end>0.000000</lux_idx_end>
+														<gain_start>4.000000</gain_start>
+													<gain_end>4.000000</gain_end>
+												</AECTrigger>
+											<verticalMode>4</verticalMode>
+											<horizontalMode>1</horizontalMode>
+											<boxFilterLength>2</boxFilterLength>
+											<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+								</Item>
+								<Item Index="2">
+										<AECTrigger>
+												<lux_idx_start>0.000000</lux_idx_start>
+													<lux_idx_end>0.000000</lux_idx_end>
+												<gain_start>1.000000</gain_start>
+											<gain_end>1.000000</gain_end>
+											</AECTrigger>
+										<verticalMode>4</verticalMode>
+										<horizontalMode>1</horizontalMode>
+									<boxFilterLength>2</boxFilterLength>
+										<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+										</Item>
+									</filterSet>
+								</filterTrigger>
+								<lcrFilterTrigger>
+									<filterSet>
+								<Item Index="0">
+									<AECTrigger>
+											<lux_idx_start>0.000000</lux_idx_start>
+									<lux_idx_end>0.000000</lux_idx_end>
+								<gain_start>8.000000</gain_start>
+							<gain_end>8.000000</gain_end>
+								</AECTrigger>
+									<verticalMode>1</verticalMode>
+										<horizontalMode>2</horizontalMode>
+										<boxFilterLength>0</boxFilterLength>
+										<antiAliasFilterThreshold>0</antiAliasFilterThreshold>
+								</Item>
+								<Item Index="1">
+									<AECTrigger>
+										<lux_idx_start>0.000000</lux_idx_start>
+											<lux_idx_end>0.000000</lux_idx_end>
+									<gain_start>4.000000</gain_start>
+										<gain_end>4.000000</gain_end>
+										</AECTrigger>
+										<verticalMode>1</verticalMode>
+										<horizontalMode>2</horizontalMode>
+											<boxFilterLength>0</boxFilterLength>
+									<antiAliasFilterThreshold>0</antiAliasFilterThreshold>
+								</Item>
+									<Item Index="2">
+										<AECTrigger>
+										<lux_idx_start>0.000000</lux_idx_start>
+											<lux_idx_end>0.000000</lux_idx_end>
+													<gain_start>1.000000</gain_start>
+												<gain_end>1.000000</gain_end>
+											</AECTrigger>
+										<verticalMode>1</verticalMode>
+										<horizontalMode>2</horizontalMode>
+										<boxFilterLength>0</boxFilterLength>
+										<antiAliasFilterThreshold>0</antiAliasFilterThreshold>
+								</Item>
+						</filterSet>
+				</lcrFilterTrigger>
+				<lcrChannel>0</lcrChannel>
+			<lcrBinningMode>0</lcrBinningMode>
+			<lcrRawType>2</lcrRawType>
+			<lcrMaxBinningNum>1</lcrMaxBinningNum>
+		</preProcess>
+		<preProcessVertical>
+				<sparseProcessingMode>0</sparseProcessingMode>
+					<HDR>
+					<channelSelection>0</channelSelection>
+					<longThreshold>450</longThreshold>
+				</HDR>
+					<boxFilterLength>2</boxFilterLength>
+							<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+								<filterTrigger>
+									<filterSet>
+										<Item Index="0">
+											<AECTrigger>
+											<lux_idx_start>0.000000</lux_idx_start>
+											<lux_idx_end>0.000000</lux_idx_end>
+											<gain_start>8.000000</gain_start>
+											<gain_end>8.000000</gain_end>
+								</AECTrigger>
+								<verticalMode>8</verticalMode>
+									<horizontalMode>1</horizontalMode>
+										<boxFilterLength>2</boxFilterLength>
+										<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+									</Item>
+								<Item Index="1">
+									<AECTrigger>
+										<lux_idx_start>0.000000</lux_idx_start>
+										<lux_idx_end>0.000000</lux_idx_end>
+									<gain_start>4.000000</gain_start>
+										<gain_end>4.000000</gain_end>
+										</AECTrigger>
+										<verticalMode>4</verticalMode>
+										<horizontalMode>1</horizontalMode>
+										<boxFilterLength>2</boxFilterLength>
+									<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+								</Item>
+								<Item Index="2">
+									<AECTrigger>
+								<lux_idx_start>0.000000</lux_idx_start>
+							<lux_idx_end>0.000000</lux_idx_end>
+							<gain_start>1.000000</gain_start>
+								<gain_end>1.000000</gain_end>
+									</AECTrigger>
+									<verticalMode>4</verticalMode>
+								<horizontalMode>1</horizontalMode>
+								<boxFilterLength>2</boxFilterLength>
+							<antiAliasFilterThreshold>100</antiAliasFilterThreshold>
+						</Item>
+					</filterSet>
+					</filterTrigger>
+				<lcrFilterTrigger>
+					<filterSet>
+					<Item Index="0">
+							<AECTrigger>
+										<lux_idx_start>0.000000</lux_idx_start>
+									<lux_idx_end>0.000000</lux_idx_end>
+									<gain_start>8.000000</gain_start>
+								<gain_end>8.000000</gain_end>
+							</AECTrigger>
+							<verticalMode>1</verticalMode>
+							<horizontalMode>2</horizontalMode>
+						<boxFilterLength>0</boxFilterLength>
+							<antiAliasFilterThreshold>0</antiAliasFilterThreshold>
+							</Item>
+							<Item Index="1">
+								<AECTrigger>
+									<lux_idx_start>0.000000</lux_idx_start>
+								<lux_idx_end>0.000000</lux_idx_end>
+								<gain_start>4.000000</gain_start>
+								<gain_end>4.000000</gain_end>
+							</AECTrigger>
+						<verticalMode>1</verticalMode>
+				<horizontalMode>2</horizontalMode>
+					<boxFilterLength>0</boxFilterLength>
+			<antiAliasFilterThreshold>0</antiAliasFilterThreshold>
+	</Item>
+		<Item Index="2">
+			<AECTrigger>
+				<lux_idx_start>0.000000</lux_idx_start>
+				<lux_idx_end>0.000000</lux_idx_end>
+					<gain_start>1.000000</gain_start>
+					<gain_end>1.000000</gain_end>
+			</AECTrigger>
+				<verticalMode>1</verticalMode>
+				<horizontalMode>2</horizontalMode>
+			<boxFilterLength>0</boxFilterLength>
+			<antiAliasFilterThreshold>0</antiAliasFilterThreshold>
+		</Item>
+	</filterSet>
+	</lcrFilterTrigger>
+	<lcrBinningMode>0</lcrBinningMode>
+
+	<lcrRawType>2</lcrRawType>
+	<lcrMaxBinningNum>1</lcrMaxBinningNum>
+</preProcessVertical>
+<correlation>
+			<minimumConfidenceLevel>250.000000</minimumConfidenceLevel>
+<defocusConfidenceThreshold>250.000000</defocusConfidenceThreshold>
+		<PDRangeControl>0.100000</PDRangeControl>
+	<searchRange>
+		<from>-32</from>
+		<to>30</to>
+		</searchRange>
+	<lcrSearchRange>
+		<from>-8</from>
+			<to>8</to>
+		</lcrSearchRange>
+		</correlation>
+	<correlationVertical>
+			<minimumConfidenceLevel>250.000000</minimumConfidenceLevel>
+		<defocusConfidenceThreshold>250.000000</defocusConfidenceThreshold>
+		<PDRangeControl>0.100000</PDRangeControl>
+		<searchRange>
+			<from>-48</from>
+			<to>16</to>
+		</searchRange>
+		<lcrSearchRange>
+			<from>-8</from>
+			<to>8</to>
+		</lcrSearchRange>
+		</correlationVertical>
+	<postProcess>
+		<biasVectorStrength>0.100000</biasVectorStrength>
+			<temporalFilterStaticWeight>0.500000</temporalFilterStaticWeight>
+			<temporalFilterDynamicWeight>1.000000</temporalFilterDynamicWeight>
+		<enableGridOverlap>1</enableGridOverlap>
+		<confIntegralWidth>24</confIntegralWidth>
+		</postProcess>
+		<postProcessVertical>
+		<biasVectorStrength>0.100000</biasVectorStrength>
+			<temporalFilterStaticWeight>0.500000</temporalFilterStaticWeight>
+				<temporalFilterDynamicWeight>1.000000</temporalFilterDynamicWeight>
+			<enableGridOverlap>1</enableGridOverlap>
+			<confIntegralWidth>24</confIntegralWidth>
+	</postProcessVertical>
+	<adaptiveK>
+			<enable>1</enable>
+			<timoutFrameCntThres>36</timoutFrameCntThres>
+		<filterSize>5</filterSize>
+			<state0StableCntThres>4</state0StableCntThres>
+			<state1StableCntThres>6</state1StableCntThres>
+		<minimumLensPosDelta>180</minimumLensPosDelta>
+			<state0ConfThres>450</state0ConfThres>
+			<state1ConfThres>600</state1ConfThres>
+		<state0PhaseDiffThres>6.000000</state0PhaseDiffThres>
+			<state1PhaseDiffThres>1.000000</state1PhaseDiffThres>
+			<tolNearTargetUpperBound>2.040000</tolNearTargetUpperBound>
+			<tolNearTargetLowerBound>0.340000</tolNearTargetLowerBound>
+				<tolFarTargetUpperBound>2.040000</tolFarTargetUpperBound>
+					<tolFarTargetLowerBound>0.340000</tolFarTargetLowerBound>
+					</adaptiveK>
+				<enablePeripheralWindows>1</enablePeripheralWindows>
+					<singleWindowProcessingLevel>
+						<processingMode>2</processingMode>
+					<dynamicLevel>100</dynamicLevel>
+					</singleWindowProcessingLevel>
+					<singleWindowProcessingLevelVertical>
+				<processingMode>2</processingMode>
+					<dynamicLevel>100</dynamicLevel>
+			</singleWindowProcessingLevelVertical>
+		<gridProcessingLevel>
+		<processingMode>2</processingMode>
+		<dynamicLevel>100</dynamicLevel>
+	</gridProcessingLevel>
+	<gridProcessingLevelVertical>
+		<processingMode>2</processingMode>
+		<dynamicLevel>100</dynamicLevel>
+		</gridProcessingLevelVertical>
+			<PeripheralProcessing>
+			<processingMode>2</processingMode>
+	<dynamicLevel>100</dynamicLevel>
+</PeripheralProcessing>
+		<PeripheralProcessingVertical>
+		<processingMode>2</processingMode>
+<dynamicLevel>100</dynamicLevel>
+
+</PeripheralProcessingVertical>
+<HVControl><PDProcessingAxis>0</PDProcessingAxis>
+		<horizontalConfWeightTuningCount>4</horizontalConfWeightTuningCount>
+		<horizontalConfWeightTuningID>830</horizontalConfWeightTuningID>
+	<horizontalConfWeightTuning>
+		<Item Index="0">
+			<weight>0.100000</weight>
+			<confThreshold>100</confThreshold>
+		</Item>
+		<Item Index="1">
+			<weight>1.000000</weight>
+		<confThreshold>400</confThreshold>
+		</Item>
+			<Item Index="2">
+					<weight>1.000000</weight>
+					<confThreshold>1000</confThreshold>
+				</Item>
+			<Item Index="3">
+					<weight>100.000000</weight>
+						<confThreshold>1000</confThreshold>
+						</Item>
+				</horizontalConfWeightTuning>
+				<verticalConfWeightTuningCount>2</verticalConfWeightTuningCount>
+				<verticalConfWeightTuningID>830</verticalConfWeightTuningID>
+				<verticalConfWeightTuning>
+					<Item Index="0">
+						<weight>0.000000</weight>
+					<confThreshold>50</confThreshold>
+					</Item>
+						<Item Index="1">
+						<weight>0.900000</weight>
+						<confThreshold>500</confThreshold>
+					</Item>
+				</verticalConfWeightTuning>
+			</HVControl>
+			<skipControl>
+					<staticFrameCountThres>8</staticFrameCountThres>
+			<maxFrameRate>30</maxFrameRate>
+		</skipControl>
+			<hardwareGeometry>
+				<enabldHardwarePDModule>1</enabldHardwarePDModule>
+					<enableOverlap>1</enableOverlap>
+				<numOfHoriGrids>4</numOfHoriGrids>
+				<numOfVertGrids>4</numOfVertGrids>
+				<horiNumOfRGNInGridUnit>1</horiNumOfRGNInGridUnit>
+				<vertNumOfRGNInGridUnit>1</vertNumOfRGNInGridUnit>
+				<horiRegionOffset>68</horiRegionOffset>
+			<vertRegionOffset>11</vertRegionOffset>
+		<widhtOfRegion>144</widhtOfRegion>
+			<heightOfRegion>16</heightOfRegion>
+			<horiNumOfRegion>15</horiNumOfRegion>
+			<vertNumOfRegion>19</vertNumOfRegion>
+		</hardwareGeometry>
+		<hardwarePattern>
+			<Item Index="0">
+				<pixelExtractor>
+				<enable>0</enable>
+				<outputWidth>0</outputWidth>
+				<outputHeight>0</outputHeight>
+				</pixelExtractor>
+			<lineExtractor>
+				<lineExtractorCount>4</lineExtractorCount>
+				<XOffsets>
+					<Item Index="0">0</Item>
+					<Item Index="1">0</Item>
+					<Item Index="2">0</Item>
+						<Item Index="3">0</Item>
+				</XOffsets>
+				<YOffsets>
+					<Item Index="0">0</Item>
+				<Item Index="1">1</Item>
+						<Item Index="2">2</Item>
+					<Item Index="3">3</Item>
+				</YOffsets>
+					<HalfLines>
+					<Item Index="0">0</Item>
+					<Item Index="1">0</Item>
+					<Item Index="2">0</Item>
+					<Item Index="3">0</Item>
+				</HalfLines>
+			</lineExtractor>
+				<pixelSeparator>
+				<inputBlockWidth>2</inputBlockWidth>
+				<inputBlockHeight>4</inputBlockHeight>
+					<outputBlockWidth>2</outputBlockWidth>
+				<outputBlockHeight>2</outputBlockHeight>
+				<pixelCount>4</pixelCount>
+		<LMap>
+				<Item Index="0">2</Item>
+				<Item Index="1">0</Item>
+				<Item Index="2">4</Item>
+				<Item Index="3">6</Item>
+				</LMap>
+				<RMap>
+						<Item Index="0">3</Item>
+							<Item Index="1">1</Item>
+							<Item Index="2">5</Item>
+						<Item Index="3">7</Item>
+						</RMap>
+				</pixelSeparator>
+			<resampler>
+		<enable>1</enable>
+	<inputBlockWidth>2</inputBlockWidth>
+			<inputBlockHeight>2</inputBlockHeight>
+		<outputBlockWidth>4</outputBlockWidth>
+		<outputBlockHeight>1</outputBlockHeight>
+	<instructions>
+			<instructionCount>4</instructionCount>
+			<Item index="0">
+					<S Index="0">
+							<Item Index="0">0</Item>
+						<Item Index="1">0</Item>
+						<Item Index="2">0</Item>
+						<Item Index="3">0</Item>
+							<Item Index="4">0</Item>
+							<Item Index="5">0</Item>
+						<Item Index="6">0</Item>
+							<Item Index="7">0</Item>
+						</S>
+						<O Index="0">
+							<Item Index="0">1.000000</Item>
+								<Item Index="1">1.000000</Item>
+							<Item Index="2">0.000000</Item>
+							<Item Index="3">0.000000</Item>
+						<Item Index="4">0.000000</Item>
+								<Item Index="5">0.000000</Item>
+							<Item Index="6">0.000000</Item>
+							<Item Index="7">0.000000</Item>
+							<Item Index="8">1.000000</Item>
+							<Item Index="9">0.000000</Item>
+								<Item Index="10">0.000000</Item>
+						<Item Index="11">0.000000</Item>
+							<Item Index="12">0.000000</Item>
+							<Item Index="13">0.000000</Item>
+							<Item Index="14">0.000000</Item>
+							<Item Index="15">0.000000</Item>
+						</O>
+						</Item>
+						<Item index="1">
+							<S Index="1">
+							<Item Index="0">1</Item>
+							<Item Index="1">0</Item>
+							<Item Index="2">1</Item>
+							<Item Index="3">0</Item>
+							<Item Index="4">1</Item>
+								<Item Index="5">0</Item>
+								<Item Index="6">1</Item>
+								<Item Index="7">0</Item>
+							</S>
+							<O Index="1">
+								<Item Index="0">1.000000</Item>
+							<Item Index="1">1.000000</Item>
+								<Item Index="2">0.000000</Item>
+								<Item Index="3">0.000000</Item>
+								<Item Index="4">0.000000</Item>
+								<Item Index="5">0.000000</Item>
+							<Item Index="6">0.000000</Item>
+							<Item Index="7">0.000000</Item>
+								<Item Index="8">1.000000</Item>
+							<Item Index="9">0.000000</Item>
+							<Item Index="10">0.000000</Item>
+							<Item Index="11">0.000000</Item>
+							<Item Index="12">0.000000</Item>
+							<Item Index="13">0.000000</Item>
+					<Item Index="14">0.000000</Item>
+						<Item Index="15">0.000000</Item>
+					</O>
+				</Item>
+				<Item index="2">
+					<S Index="2">
+							<Item Index="0">0</Item>
+							<Item Index="1">1</Item>
+								<Item Index="2">0</Item>
+									<Item Index="3">1</Item>
+									<Item Index="4">0</Item>
+									<Item Index="5">1</Item>
+									<Item Index="6">0</Item>
+									<Item Index="7">1</Item>
+									</S>
+									<O Index="2">
+								<Item Index="0">1.000000</Item>
+									<Item Index="1">1.000000</Item>
+								<Item Index="2">0.000000</Item>
+								<Item Index="3">0.000000</Item>
+								<Item Index="4">0.000000</Item>
+								<Item Index="5">0.000000</Item>
+								<Item Index="6">0.000000</Item>
+								<Item Index="7">0.000000</Item>
+								<Item Index="8">1.000000</Item>
+								<Item Index="9">0.000000</Item>
+								<Item Index="10">0.000000</Item>
+								<Item Index="11">0.000000</Item>
+								<Item Index="12">0.000000</Item>
+								<Item Index="13">0.000000</Item>
+							<Item Index="14">0.000000</Item>
+									<Item Index="15">0.000000</Item>
+								</O>
+								</Item>
+									<Item index="3">
+									<S Index="3">
+										<Item Index="0">1</Item>
+										<Item Index="1">1</Item>
+										<Item Index="2">1</Item>
+									<Item Index="3">1</Item>
+										<Item Index="4">1</Item>
+										<Item Index="5">1</Item>
+										<Item Index="6">1</Item>
+										<Item Index="7">1</Item>
+									</S>
+										<O Index="3">
+										<Item Index="0">1.000000</Item>
+										<Item Index="1">1.000000</Item>
+										<Item Index="2">0.000000</Item>
+										<Item Index="3">0.000000</Item>
+										<Item Index="4">0.000000</Item>
+										<Item Index="5">0.000000</Item>
+										<Item Index="6">0.000000</Item>
+										<Item Index="7">0.000000</Item>
+									<Item Index="8">1.000000</Item>
+								<Item Index="9">0.000000</Item>
+										<Item Index="10">0.000000</Item>
+										<Item Index="11">0.000000</Item>
+										<Item Index="12">0.000000</Item>
+											<Item Index="13">0.000000</Item>
+										<Item Index="14">0.000000</Item>
+										<Item Index="15">0.000000</Item>
+									</O>
+							</Item>
+						</instructions>
+						</resampler>
+					</Item>
+						<Item Index="1">
+						<pixelExtractor>
+							<enable>0</enable>
+							<outputWidth>0</outputWidth>
+							<outputHeight>0</outputHeight>
+						</pixelExtractor>
+						<lineExtractor>
+							<lineExtractorCount>4</lineExtractorCount>
+							<XOffsets>
+								<Item Index="0">0</Item>
+									<Item Index="1">0</Item>
+									<Item Index="2">0</Item>
+									<Item Index="3">0</Item>
+								</XOffsets>
+								<YOffsets>
+								<Item Index="0">0</Item>
+							<Item Index="1">1</Item>
+								<Item Index="2">2</Item>
+									<Item Index="3">3</Item>
+								</YOffsets>
+									<HalfLines>
+									<Item Index="0">0</Item>
+									<Item Index="1">0</Item>
+									<Item Index="2">0</Item>
+									<Item Index="3">0</Item>
+							</HalfLines>
+							</lineExtractor>
+							<pixelSeparator>
+								<inputBlockWidth>2</inputBlockWidth>
+								<inputBlockHeight>4</inputBlockHeight>
+								<outputBlockWidth>2</outputBlockWidth>
+								<outputBlockHeight>2</outputBlockHeight>
+								<pixelCount>4</pixelCount>
+								<LMap>
+									<Item Index="0">2</Item>
+									<Item Index="1">0</Item>
+									<Item Index="2">4</Item>
+									<Item Index="3">6</Item>
+								</LMap>
+								<RMap>
+									<Item Index="0">3</Item>
+									<Item Index="1">1</Item>
+								<Item Index="2">5</Item>
+							<Item Index="3">7</Item>
+							</RMap>
+							</pixelSeparator>
+							<resampler>
+							<enable>1</enable>
+							<inputBlockWidth>2</inputBlockWidth>
+							<inputBlockHeight>2</inputBlockHeight>
+							<outputBlockWidth>4</outputBlockWidth>
+							<outputBlockHeight>1</outputBlockHeight>
+							<instructions>
+							<instructionCount>4</instructionCount>
+							<Item index="0">
+									<S Index="0">
+										<Item Index="0">0</Item>
+										<Item Index="1">0</Item>
+											<Item Index="2">0</Item>
+											<Item Index="3">2</Item>
+											<Item Index="4">0</Item>
+											<Item Index="5">2</Item>
+												<Item Index="6">0</Item>
+											<Item Index="7">2</Item>
+										</S>
+										<O Index="0">
+											<Item Index="0">1.000000</Item>
+											<Item Index="1">1.000000</Item>
+											<Item Index="2">1.000000</Item>
+									<Item Index="3">1.000000</Item>
+										<Item Index="4">0.000000</Item>
+											<Item Index="5">0.000000</Item>
+											<Item Index="6">0.000000</Item>
+											<Item Index="7">0.000000</Item>
+											<Item Index="8">1.000000</Item>
+											<Item Index="9">1.000000</Item>
+											<Item Index="10">0.000000</Item>
+										<Item Index="11">0.000000</Item>
+											<Item Index="12">0.000000</Item>
+										<Item Index="13">0.000000</Item>
+										<Item Index="14">0.000000</Item>
+										<Item Index="15">0.000000</Item>
+									</O>
+								</Item>
+									<Item index="1">
+										<S Index="1">
+										<Item Index="0">1</Item>
+										<Item Index="1">0</Item>
+										<Item Index="2">1</Item>
+										<Item Index="3">2</Item>
+										<Item Index="4">1</Item>
+											<Item Index="5">2</Item>
+									<Item Index="6">1</Item>
+								<Item Index="7">2</Item>
+								</S>
+									<O Index="1">
+										<Item Index="0">1.000000</Item>
+											<Item Index="1">1.000000</Item>
+									<Item Index="2">1.000000</Item>
+									<Item Index="3">1.000000</Item>
+										<Item Index="4">0.000000</Item>
+								<Item Index="5">0.000000</Item>
+									<Item Index="6">0.000000</Item>
+									<Item Index="7">0.000000</Item>
+									<Item Index="8">1.000000</Item>
+									<Item Index="9">1.000000</Item>
+									<Item Index="10">0.000000</Item>
+									<Item Index="11">0.000000</Item>
+									<Item Index="12">0.000000</Item>
+									<Item Index="13">0.000000</Item>
+									<Item Index="14">0.000000</Item>
+									<Item Index="15">0.000000</Item>
+								</O>
+								</Item>
+							<Item index="2">
+								<S Index="2">
+										<Item Index="0">0</Item>
+							<Item Index="1">1</Item>
+								<Item Index="2">0</Item>
+									<Item Index="3">3</Item>
+										<Item Index="4">0</Item>
+									<Item Index="5">3</Item>
+									<Item Index="6">0</Item>
+									<Item Index="7">3</Item>
+								</S>
+								<O Index="2">
+								<Item Index="0">1.000000</Item>
+									<Item Index="1">1.000000</Item>
+										<Item Index="2">1.000000</Item>
+										<Item Index="3">1.000000</Item>
+										<Item Index="4">0.000000</Item>
+										<Item Index="5">0.000000</Item>
+											<Item Index="6">0.000000</Item>
+										<Item Index="7">0.000000</Item>
+										<Item Index="8">1.000000</Item>
+										<Item Index="9">1.000000</Item>
+										<Item Index="10">0.000000</Item>
+										<Item Index="11">0.000000</Item>
+										<Item Index="12">0.000000</Item>
+										<Item Index="13">0.000000</Item>
+								<Item Index="14">0.000000</Item>
+						<Item Index="15">0.000000</Item>
+				</O>
+				</Item>
+					<Item index="3">
+						<S Index="3">
+							<Item Index="0">1</Item>
+						<Item Index="1">1</Item>
+							<Item Index="2">1</Item>
+								<Item Index="3">3</Item>
+								<Item Index="4">1</Item>
+								<Item Index="5">3</Item>
+								<Item Index="6">1</Item>
+								<Item Index="7">3</Item>
+							</S>
+							<O Index="3">
+							<Item Index="0">1.000000</Item>
+								<Item Index="1">1.000000</Item>
+								<Item Index="2">1.000000</Item>
+								<Item Index="3">1.000000</Item>
+								<Item Index="4">0.000000</Item>
+								<Item Index="5">0.000000</Item>
+								<Item Index="6">0.000000</Item>
+							<Item Index="7">0.000000</Item>
+								<Item Index="8">1.000000</Item>
+								<Item Index="9">1.000000</Item>
+								<Item Index="10">0.000000</Item>
+								<Item Index="11">0.000000</Item>
+								<Item Index="12">0.000000</Item>
+								<Item Index="13">0.000000</Item>
+							<Item Index="14">0.000000</Item>
+						<Item Index="15">0.000000</Item>
+						</O>
+					</Item>
+				</instructions>
+			</resampler>
+			</Item>
+	</hardwarePattern>
+	<enableFocusMap>0</enableFocusMap>
+	<extensionParamCount>2</extensionParamCount>
+		<extensionParam>
+			<ID>0</ID>
+			<Name>Extension feature</Name>
+			<enableFlag>0</enableFlag>
+			<dataCount>1</dataCount>
+				<data>0.000000</data>
+			</extensionParam>
+				<extensionParam>
+				<ID>1</ID>
+					<Name>EnableOptimizedSparseParsing</Name>
+				<enableFlag>1</enableFlag>
+				<dataCount>1</dataCount>
+				<data>1.000000</data>
+			</extensionParam>
+			</chromatixPDLibType>
+		</pdlib_config>

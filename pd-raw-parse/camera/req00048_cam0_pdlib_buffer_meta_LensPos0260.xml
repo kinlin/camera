@@ -1,0 +1,5 @@
+<PDLibParam><PDBufferFd>297</PDBufferFd><PDBufferSize>3004416</PDBufferSize><windowConfig><roiType>1</roiType><window><startX>0.168685</startX><startY>0.024540</startY><endX>0.307526</endX><endY>0.271472</endY>
+</window><horizontalWindowCount>1</horizontalWindowCount><verticalWindowCount>1</verticalWindowCount>
+</windowConfig><gain>9.114154</gain><fps>16.000000</fps><integrationTime>60000000.000000</integrationTime><lensPosition>260</lensPosition><cameraInfo><algoRole>1</algoRole><cameraId>0</cameraId>
+</cameraInfo>
+</PDLibParam>
