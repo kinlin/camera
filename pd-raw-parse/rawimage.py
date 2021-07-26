@@ -96,7 +96,7 @@ def yuv420torgb(yuv, h, isYvu=False):
     return rgb.reshape(h, w, 3)
 
 class RawImageBase(object):
-    def __init__(self, path, width, height, usize=None, offset=0, dtype=np.uint8):
+    def __init__(self, path, width, height, stride, usize=None, offset=0, dtype=np.uint8):
         self.path = path
         self.width = width
         self.height = height
@@ -105,6 +105,8 @@ class RawImageBase(object):
         self.dtype = dtype
         self.raw = None
         self.rgb = None
+        self.stride = stride
+        #print("RawImageBase self.stride   ", stride)
         pass
 
     def load(self):
@@ -115,9 +117,27 @@ class RawImageBase(object):
             # 3. load date from file
             self.raw = np.fromfile(infile, self.dtype)
 
-        # 4. force resize
-        if self.width is not None and self.usize is not None:
-            self.raw.resize((int(self.width * self.usize * self.height)))
+        # process stride
+        print(self.stride, self.width, self.usize)
+        if self.stride is not None and self.stride!=0 and self.usize is not None:
+            new_width = int(self.stride * self.usize)
+            ori_width = int(int(self.width) * self.usize)
+            print(new_width, ori_width)
+            img=self.raw.reshape(self.height, new_width)
+            padding = new_width - ori_width
+            print("padding is: ", padding)
+            for i in range(padding):  #3248-2592*1.25=8
+                img=np.delete(img, -1, 1)
+            self.raw=img.flatten()
+
+        #img=self.raw.reshape(3472,5840)
+        #for i in range(60):  #3248-2592*1.25=8
+        #    img=np.delete(img, -1, 1)
+        #self.raw=img.flatten()
+            
+        # 4. force resize  Why we need This? this would make the image abnormal
+        #if self.width is not None and self.usize is not None:
+        #    self.raw.resize((int(self.width * self.usize * self.height)))
 
         pass
 
@@ -125,9 +145,9 @@ class RawImageBase(object):
         return self.rgb
 
 class RawBayerImage(RawImageBase):
-    def __init__(self, path, width, height, usize, offset, dtype, bayer='rggb', rawtorawf=None):
+    def __init__(self, path, width, height, stride, usize, offset, dtype, bayer='rggb', rawtorawf=None):
         RawImageBase.__init__(self, path=path, width=width,
-                              height=height, usize=usize,
+                              height=height, stride=stride, usize=usize,
                               offset=offset, dtype=dtype)
         self.bayer = bayer
         self.rawtorawf = rawtorawf
@@ -141,39 +161,39 @@ class RawBayerImage(RawImageBase):
 
 
 class Raw10Image(RawBayerImage):
-    def __init__(self, path, width, height, offset=0, bayer='rggb'):
+    def __init__(self, path, width, height, stride, offset=0, bayer='rggb'):
         RawBayerImage.__init__(self, path=path, width=width,
-                              height=height, usize=1.25,
+                              height=height, stride=stride, usize=1.25,
                               offset=offset, bayer=bayer,
                               dtype=np.uint8, rawtorawf=raw10torawf)
 
 
 class MipiRawImage(RawBayerImage):
-    def __init__(self, path, width, height, offset=0, bayer='rggb'):
+    def __init__(self, path, width, height, stride, offset=0, bayer='rggb'):
         RawBayerImage.__init__(self, path=path, width=width,
-                              height=height, usize=1.25,
+                              height=height, stride=stride, usize=1.25,
                               offset=offset, bayer=bayer,
                               dtype=np.uint8, rawtorawf=mipirawtorawf)
 
 class Raw8Image(RawBayerImage):
-    def __init__(self, path, width, height, offset=0, bayer='rggb'):
+    def __init__(self, path, width, height, stride, offset=0, bayer='rggb'):
         RawBayerImage.__init__(self, path=path, width=width,
-                              height=height, usize=1.0,
+                              height=height, stride=stride, usize=1.0,
                               offset=offset, bayer=bayer,
                               dtype=np.uint8, rawtorawf=raw8torawf)
 
 class Raw16Image(RawBayerImage):
-    def __init__(self, path, width, height, offset=0, bayer='rggb'):
+    def __init__(self, path, width, height, stride, offset=0, bayer='rggb'):
         RawBayerImage.__init__(self, path=path, width=width,
-                              height=height, usize=2.0,
+                              height=height, stride=stride, usize=2.0,
                               offset=offset, bayer=bayer,
                               dtype=np.uint16, rawtorawf=raw16torawf)
 
 
 class GrayImage(RawImageBase):
-    def __init__(self, path, width, height, offset=0):
+    def __init__(self, path, width, height, stride, offset=0):
         RawImageBase.__init__(self, path=path, width=width,
-                              height=height, usize=1.0,
+                              height=height, stride=stride, usize=1.0,
                               offset=offset, dtype=np.uint8);
 
     def load(self):
@@ -183,9 +203,9 @@ class GrayImage(RawImageBase):
 
 
 class YuvImage(RawImageBase):
-    def __init__(self, path, width, height, offset=0, isYvu=False):
+    def __init__(self, path, width, height, stride, offset=0, isYvu=False):
         RawImageBase.__init__(self, path=path, width=width,
-                              height=height, usize=1.5,
+                              height=height, stride=stride, usize=1.5,
                               offset=offset, dtype=np.uint8)
         self.isYvu = isYvu
 
@@ -194,6 +214,6 @@ class YuvImage(RawImageBase):
         self.rgb = yuv420torgb(self.raw, self.height, self.isYvu)
 
 class YvuImage(YuvImage):
-    def __init__(self, path, width, height, offset=0):
+    def __init__(self, path, width, height, stride, offset=0):
         YuvImage.__init__(self, path=path, width=width,
-                          height=height, offset=offset, isYvu=True)
+                          height=height, stride=stride, offset=offset, isYvu=True)
