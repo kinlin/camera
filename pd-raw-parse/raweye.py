@@ -82,7 +82,9 @@ if "__main__" == __name__:
     defaultP = DefaultParam()
     #defaultP = defaultP.make_struct(2592, 1944, 'raw', 'rggb')       #raw10
     defaultP = defaultP.make_struct(3472, 4624, 'raw', 'rggb', 4672)       #raw10 need stride
-    #defaultP = defaultP.make_struct(860, 4592, 'raw16', 'rggb')       #raw16 ife port28 pd processed 
+    #defaultP = defaultP.make_struct(480, 640, 'yuv', 'rggb')       #raw10 need stride
+    
+    #defaultP = defaultP.make_struct(1304, 1152, 'raw16', 'rggb')       #raw16 ife port28 pd processed 
     #defaultP = defaultP.make_struct(1720, 1152, 'raw16', 'rggb')    #imx686   photo mode; mode1
     #defaultP = defaultP.make_struct(856, 576, 'raw16', 'rggb')    #imx686     mode11
     #defaultP = defaultP.make_struct(780, 1052, 'raw16', 'rggb')    #cam4 s5k3m5 mode0
@@ -191,32 +193,31 @@ if "__main__" == __name__:
         print(args.outfile)
         rgb = process(args)
     
-        rgb = tonemapping_operator_filmic(rgb)
+        if True:
+            rgb = tonemapping_operator_filmic(rgb)
+            np.clip(rgb, 0.0, 1.0, out=rgb)
+            #make it gray; for rawtype == raw, 
+            rgb=rgb2gray(rgb)
         
-        np.clip(rgb, 0.0, 1.0, out=rgb)
-        #make it gray
-        rgb=rgb2gray(rgb)
-        
-        #plt.figure(figsize=(defaultP.width/100, defaultP.height/100))
-        plt.imshow(rgb, cmap='Greys_r')
-        #plt.show()
-        plt.savefig(args.outfile)
-        #imwrite(args.outfile, rgb)
+        if True:
+            #plt.figure(figsize=(defaultP.width/100, defaultP.height/100))
+            plt.imshow(rgb, cmap='Greys_r')
+            #plt.imshow(rgb)
+            #plt.show()
+            plt.savefig(args.outfile)
+        else:
+            imwrite(args.outfile, rgb)  # this can also use to save the jpg
         
     #apply Gamma
     #seems have problem, not do it now
 
-
     #rgb = np.dot(rgb, g_ccm)
-
 
     #rgb = rgb / (rgb + 1)
     #rgb = tonemapping_operator_simple(rgb)
 
-
     #np.clip(rgb, 0.0, 1.0, out=rgb)
     #gray=rgb2gray(rgb)
-
     
     #if args.outfile:
     #    imwrite(args.outfile, rgb)
@@ -228,7 +229,6 @@ if "__main__" == __name__:
     #    #matplotlib.patches.Rectangle(xy, width, height, angle=0.0)     left, top, width, height
     #    rect=patches.Rectangle((200, 600),550,650,linewidth=2,edgecolor='r',facecolor='none')
     #    currentAxis.add_patch(rect)
-        
-        
+
     #    plt.show()
         #plt.savefig('lena_new_sz.png')
