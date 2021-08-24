@@ -91,8 +91,9 @@ if "__main__" == __name__:
     #defaultP = defaultP.make_struct(860, 4592, 'raw16', 'rggb')    #
     #defaultP = defaultP.make_struct(1304, 1152, 'raw16', 'rggb')    #video mode, imx686
     #defaultP = defaultP.make_struct(2592, 1944, 'raw', 'rggb')       #raw10
-
-
+    #defaultP = defaultP.make_struct(4624, 3472, 'raw', 'rggb')       #raw10
+    #python3 raweye.py -D .\camera
+    #python3 raweye.py -i .\camera\reqId0004_camId00_20210710_021851_186_pdaf_input_lens_pos_0323.raw
     
     parser = argparse.ArgumentParser(description='Show raw image or convert it to jpeg/png.',
                                     formatter_class=argparse.RawTextHelpFormatter)
