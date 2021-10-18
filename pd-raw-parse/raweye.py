@@ -37,7 +37,7 @@ import datetime
 g_ccm = np.array([[1.2085, -0.2502, 0.0417],
                   [-0.1174, 1.1625, -0.0452],
                   [0.0226, -0.2524, 1.2298]])
-
+RAW_File = ["raw", "RAW", "RawMIPI", "RawMIPI10", "RawPlain16", "RawPlain16LSB10bit", "RawPlain16LSB12bit", "RawPlain16LSB14bit"]
 def rgb2gray(rgb):
     return np.dot(rgb[...,:3], [0.299, 0.587, 0.114])
 
@@ -81,11 +81,14 @@ def process(args):
 if "__main__" == __name__:
     defaultP = DefaultParam()
     #defaultP = defaultP.make_struct(2592, 1944, 'raw', 'rggb')       #raw10
-    defaultP = defaultP.make_struct(3472, 4624, 'raw', 'rggb', 4672)       #raw10 need stride
+    #defaultP = defaultP.make_struct(3472, 4624, 'raw', 'rggb', 4672)       #raw10 need stride
+    #defaultP = defaultP.make_struct(4264, 5680, 'raw', 'rggb', 5696)       #raw10 need stride
+    #defaultP = defaultP.make_struct(756, 4032, 'raw16', 'rggb')    #imx563  
     #defaultP = defaultP.make_struct(480, 640, 'yuv', 'rggb')       #raw10 need stride
     
     #defaultP = defaultP.make_struct(1304, 1152, 'raw16', 'rggb')       #raw16 ife port28 pd processed 
     #defaultP = defaultP.make_struct(1720, 1152, 'raw16', 'rggb')    #imx686   photo mode; mode1
+    defaultP = defaultP.make_struct(1488, 992, 'raw16', 'rggb')    #imx686   photo; izoom crop mode; mode1
     #defaultP = defaultP.make_struct(856, 576, 'raw16', 'rggb')    #imx686     mode11
     #defaultP = defaultP.make_struct(780, 1052, 'raw16', 'rggb')    #cam4 s5k3m5 mode0
     #defaultP = defaultP.make_struct(860, 4592, 'raw16', 'rggb')    #
@@ -139,7 +142,8 @@ if "__main__" == __name__:
         path=args.inDir
         dirs=os.listdir(path)
         for file in dirs:
-            if file.split('.')[-1]=='raw':
+            postFix = file.split('.')[-1]
+            if postFix in RAW_File:
                 args.infile=path+'/'+file
                 args.outfile=file.split('.')[0]+'.'+'jpg'
                 rgb = process(args)
